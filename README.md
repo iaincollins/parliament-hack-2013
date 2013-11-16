@@ -53,9 +53,19 @@ This would need parsing of PDF's to identify bills by name and member.
 Hansard API's are here:
 http://hansard.millbanksystems.com/api
 
-I can't see a way to search Hansard debates by keyword at the moment, but the
-above API does allow you to look up by member.
+It isn't currently possible to search Hansard by keyword may fall back to 
+showing related data from other sources (BBC, Guardian, Google, etc - ideally
+a broad range) for relevant commentary. You can look up by member though.
 
-If I can't find a way to search Hansard by keyword may fall back to looking up
-other services (BBC, Guardian, Google, etc - ideally a broad range) for
-related commentary.
+Additional API for looking up members:
+http://data.parliament.uk/membersdataplatform/memberquery.aspx
+
+Also possible to screen scrape for members using their PIMS ID in these URLs:
+http://www.publications.parliament.uk/pa/cm201314/cmhansrd/cmallfiles/mps/commons_hansard_3572_home.html
+http://data.parliament.uk/membersdataplatform/services/mnis/members/query/name*Abbot/
+
+NB: For lords the URL format for member pages is:
+http://www.publications.parliament.uk/pa/ld201314/ldhansrd/ldallfiles/peers/lord_hansard_5355_od.html
+
+Thanks to @stephen_abbot for explaining a bit about the API's and walking me
+through the significance of some of the values!
