@@ -1,13 +1,61 @@
 parliament-hack-2013
 ===================
 
-UK Parliament Hack 2013
+UK Parliament Hack 2013 #RSPARLY2013
 http://rewiredstate.org/hacks/uk-parliament-hack-2013
 
 Documentation for relevant APIs can be found here:
 https://s3.amazonaws.com/ParliamentHack2013/Parliament+Hack+2013.htm
 
-Creating an empty repo so I have somewhere to put whatever hack I decide to work on this weekend at #RSPARLY2013
+ABOUT THIS HACK
 
-Not decided yet what I want to work on yet, just wanted to set up a repo and empty site to get me in the mood!
+Saturday 11th, 10:45:
 
+While on the tube the way to the pre-hack drinks last night, I wrote down a
+few ideas on my iPhone.
+
+This is my favourite and what I think I'll use as my brief for the weekend.
+
+"A system for public review and critique of new legislation, allowing line by
+line annotation."
+
+- Allow for ranked feedback and encouraging participation and public
+  commentary.
+- Summarise feedback for MPs, journalists and other interested parties and
+  allow replies to annotations.
+- Automatically find related commentary by members by looking up Hansard.
+- Automatically tag bills and allow people can subscribe to receive email
+  alerts for legislation matching their interests.
+- Show the state of the bill and how members have voted on it as time passes.
+
+I'm not certain if the API's will allow this yet, but it looks like they at
+least /almost/ do and that hackery is possible where it doesn't.
+
+It may be necessary to screen scrape http://services.parliament.uk/bills/ to
+get things like the text of bills (and convert them from PDF to plain text
+or HTML).
+
+There is an RSS feed for bills:
+http://services.parliament.uk/bills/AllBills.rss
+
+There is also an XML dump of the data here:
+https://s3.amazonaws.com/ParliamentHack2013/Bills.zip)
+
+Drafts of public bills are posted in a PDF here:
+http://www.parliament.uk/business/bills-and-legislation/current-bills/public-bill-list/
+
+"The Progress of Public Bills list includes the dates of all stages of public
+bills laid before Parliament this session. The list is published every 
+Friday during sitting time by midday."
+
+This would need parsing of PDF's to identify bills by name and member.
+
+Hansard API's are here:
+http://hansard.millbanksystems.com/api
+
+I can't see a way to search Hansard debates by keyword at the moment, but the
+above API does allow you to look up by member.
+
+If I can't find a way to search Hansard by keyword may fall back to looking up
+other services (BBC, Guardian, Google, etc - ideally a broad range) for
+related commentary.
