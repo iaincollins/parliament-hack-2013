@@ -5,10 +5,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <h1>Review &amp; comment on new legislation</h1>
-                <p class="lead">
-                    Public feedback on draft bills
-                </p>
+                <h1>
+                    <span class="fa-stack fa-lg pull-left" style="margin-right: 20px;">
+                      <i class="fa fa-sun-o fa-stack-2x"></i>
+                      <i class="fa fa-bullhorn fa-stack-1x"></i>
+                    </span>
+                    <span class="pull-left">
+                        Review &amp; comment on new legislation
+                        <br/>
+                        <small>Public feedback on draft bills</small>
+                    </span>
+                </h1>
+                <div class="clearfix"></div>
+                <br/>
                 <?php
                     $j = 0;
                     foreach (Bills::getBills() as $bill):
@@ -50,7 +59,14 @@
                         <?php  
                             foreach ($bill->getMembers() as $memberName):
                                 $member = Member::getMemberByName($memberName);
-                                $members[sha1($member->name)] = $member;
+                                
+                                if (!isset($members[sha1($member->name)])) {
+                                    $members[sha1($member->name)] = array();
+                                    $members[sha1($member->name)]['member'] = $member;
+                                    $members[sha1($member->name)]['bills'] = 1;
+                                } else {
+                                    $members[sha1($member->name)]['bills']++;
+                                }
                         ?>
                                 <?php if ($member->avatar): ?>
                                 <img class="avatar" height="30px" src="<?= $member->avatar ?>" />
@@ -68,18 +84,23 @@
                     </div>
                 </div>
                 <div class="clearfix"></div>
+                <br/>
                 <?php endforeach; ?>
             </div>
             <div class="col-md-3">
                 <h3>MPs with active bills</h3>
+                <hr/>
             <?php  
-                foreach ($members as $member):
+                foreach ($members as $array):
+                $member = $array['member'];
+                $numberOfBills = $array['bills'];
             ?>
                 <p>
                     <?php if ($member->avatar): ?>
                     <img class="avatar" height="30px" src="<?= $member->avatar ?>" />
                     <?php endif; ?>
                     <a style="margin-right: 10px;" href="<?= $member->url ?>"><?= htmlspecialchars($member->name) ?></a>
+                    <span class="badge"><?= $numberOfBills ?></span>
                 </p>
             <?php endforeach; ?>
             </div>

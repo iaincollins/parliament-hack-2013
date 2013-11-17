@@ -5,7 +5,7 @@ class Member {
     public $name;
     public $url;
     public $party;
-    public $avatar = 'http://www.gravatar.com/avatar/00000000000000000000000000000000"';
+    public $avatar = 'http://www.gravatar.com/avatar/00000000000000000000000000000000?d=identicon&f=y';
     
     public static function getMemberByName($name) {
     

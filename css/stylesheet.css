@@ -39,3 +39,13 @@ ul.votes li:nth-child(2) {
 .vote-buttons .btn.btn-default {
     background: #666;
 }
+
+
+.stBubble_count {
+    height: 40px !important;
+}
+
+.stButton_gradient,
+.stMainServices {
+    height: 22px !important;
+}

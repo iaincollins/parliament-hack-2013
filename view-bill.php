@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="media-body">
-                    <h1><?= htmlspecialchars($bill->title) ?> Bill</h1>
+                    <h2><?= htmlspecialchars($bill->title) ?> Bill</h2>
                     <p class="lead">
                         <?php
                             foreach (explode("\n", $bill->description) as $description) {
@@ -45,8 +45,17 @@
                             }
                         ?>
                     </ul>
+
+                    <p>
+                        <span class="st_facebook" displayText="Facebook"></span>
+                        <span class="st_twitter" displayText="Tweet"></span>
+                        <span class="st_googleplus" displayText="Google"></span>
+                        <span class="st_email" displayText="Email"></span>
+                    </p>
+                    <br/><br/>
+                    
                 </div>
-            </div>            
+            </div>
             <?php if ($bill->getBillText() == false): ?>
                 <h4 class="text-danger text-center">The text for this bill is not yet available.</h4>
             <?php else: ?>
