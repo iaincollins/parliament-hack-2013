@@ -1,6 +1,7 @@
 <?php
     include_once(dirname(__FILE__).'/lib/stdHeader.php');
-    $bill = Bill::getBillById($_REQUEST['id']);
+    $billId = str_replace('/bill-text/', '', $_SERVER['REQUEST_URI']);
+    $bill = Bill::getBillById($billId);
 ?>
 <!DOCTYPE HTML>
 <html lang="en">
@@ -28,11 +29,11 @@
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
         <script src="//assets.annotateit.org/annotator/v1.2.6/annotator-full.min.js"></script>
     </head>
-    <body class="bill-text">
+    <body id="bill-text-<?= $bill->id ?>" class="bill-text">
         <?= $bill->getBillText(); ?>
         <script>
             jQuery(function($) {
-                $('.bill-text').annotator().annotator('setupPlugins');
+                $('#bill-text-<?= $bill->id ?>').annotator().annotator('setupPlugins');
             });
         </script>
     </body>

@@ -71,7 +71,7 @@
                         <div class="clearfix"></div>
                     </div>
                     <div class="panel-body" style="padding: 5px;">
-                        <iframe width="100%" style="height: 480px; border: 0;" src="/bill-text/?id=<?= $bill->id ?>"></iframe>
+                        <iframe width="100%" style="height: 480px; border: 0;" src="/bill-text/<?= $bill->id ?>"></iframe>
                     </div>
                 </div>
             <?php endif; ?>
