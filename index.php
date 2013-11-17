@@ -1,16 +1,19 @@
-<?php include('include/header.php'); ?>
+<?php
+    include('include/header.php');
+    $members = array();
+?>
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <h1>Review &amp; feedback on new legislation</h1>
+                <h1>Review &amp; comment on new legislation</h1>
                 <p class="lead">
-                    Public consultation and review of draft bills
+                    Public feedback on draft bills
                 </p>
                 <?php
                     $j = 0;
                     foreach (Bills::getBills() as $bill):
                         $j++;
-                        if ($j > 5)
+                        if ($j > 20)
                             break;
                             
                         $sponsors = $bill->getMembers();
@@ -28,8 +31,13 @@
                         <div style="height: 65px; width: 75px;">
                             <div style="position: relative; left: -32px; top: -45px; height: 90px; width: 90px;" id="votes-<?= $bill->id ?>"></div>
                             <ul data-pie-id="votes-<?= $bill->id ?>" class="votes hidden">
-                                <li data-value="80">For</li>
-                                <li data-value="20">Against</li>
+                            <?=
+                                $for = 100;
+                                $against = rand(0,100);
+                                $for -= $against;
+                            ?>
+                                <li data-value="<?= $for ?>">For</li>
+                                <li data-value="<?= $against ?>">Against</li>
                             </ul>
                         </div>
                         <div class="vote-buttons">
@@ -38,16 +46,17 @@
                         </div>
                     </div>
                     <div class="media-body">
-                        <h3 style="margin-top: 0;"><a href="/view-bill/?id=<?= $bill->id ?>" style="text-decoration: none;"><?= htmlspecialchars($bill->title) ?></a></h3>
-                        <?php 
-                            $i = 0;
-                            foreach ($sponsors as $memberName):
-                                if ($i>0)
-                                    echo ', ';
-                                $i++;
-                                echo '<a href="#">'.htmlspecialchars($memberName).'</a>';
-                            endforeach;
+                        <h3 style="margin-top: 0;"><a href="/view-bill/?id=<?= $bill->id ?>" style="text-decoration: none;"><?= htmlspecialchars($bill->title) ?> Bill</a></h3>
+                        <?php  
+                            foreach ($bill->getMembers() as $memberName):
+                                $member = Member::getMemberByName($memberName);
+                                $members[sha1($member->name)] = $member;
                         ?>
+                                <?php if ($member->avatar): ?>
+                                <img class="avatar" height="30px" src="<?= $member->avatar ?>" />
+                                <?php endif; ?>
+                                <a style="margin-right: 10px;" href="<?= $member->url ?>"><?= htmlspecialchars($member->name) ?></a>
+                        <?php endforeach; ?>
                         <p style="max-height: 40px; overflow: hidden;">
                             <?= htmlspecialchars($bill->description) ?>
                         </p>
@@ -62,8 +71,18 @@
                 <?php endforeach; ?>
             </div>
             <div class="col-md-3">
-                <h3>Upcoming legislation</h3>
-            <div>
+                <h3>MPs with active bills</h3>
+            <?php  
+                foreach ($members as $member):
+            ?>
+                <p>
+                    <?php if ($member->avatar): ?>
+                    <img class="avatar" height="30px" src="<?= $member->avatar ?>" />
+                    <?php endif; ?>
+                    <a style="margin-right: 10px;" href="<?= $member->url ?>"><?= htmlspecialchars($member->name) ?></a>
+                </p>
+            <?php endforeach; ?>
+            </div>
         </div>
     </div><!-- /.container -->
     <script>

@@ -32,7 +32,7 @@
         <?= $bill->getBillText(); ?>
         <script>
             jQuery(function($) {
-                $('.bill-text').annotator(); //.annotator('setupPlugins');
+                $('.bill-text').annotator().annotator('setupPlugins');
             });
         </script>
     </body>

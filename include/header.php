@@ -11,7 +11,9 @@
         <title>Parliament Hack 2013</title>
         <link rel="shortcut icon" href="/favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"/>
-        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootswatch/3.0.1/cosmo/bootstrap.min.css"/>
+<!--         <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootswatch/3.0.1/cosmo/bootstrap.min.css"/> -->
+        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootswatch/3.0.1/flatly/bootstrap.min.css"/>
+        
         <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"/>
         <link rel="stylesheet" type="text/css" href="http://assets.annotateit.org/annotator/v1.2.6/annotator.min.css"/>
         <link href="/css/pizza.css" media="screen, projector, print" rel="stylesheet" type="text/css" />

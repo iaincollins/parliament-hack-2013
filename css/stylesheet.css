@@ -20,16 +20,20 @@
     font-style: normal !important;
 }
 
+.navbar {
+    border-radius: 0 !important;
+}
 ul.votes li:nth-child(1) {
-    color: #3fb618 !important;
+    color: #0fae76 !important;
 }
 
 ul.votes li:nth-child(2) {
-    color: #ff0039 !important;
+    color: #ca2335 !important;
 }
 
+.avatar,
 .vote-buttons .btn {
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 .vote-buttons .btn.btn-default {

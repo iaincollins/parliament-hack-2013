@@ -7,10 +7,15 @@
             <div class="media">
                 <div class="media-object pull-left" style="padding-top: 30px;">
                     <div style="height: 75px; width: 75px;">
-                        <div style="position: relative; left: -35px; top: -45px; height: 100px; width: 100px;" id="votes"></div>
+                        <div style="position: relative; left: -36px; top: -40px; height: 96px; width: 96px;" id="votes"></div>
                         <ul data-pie-id="votes" class="votes hidden">
-                            <li data-value="80">For</li>
-                            <li data-value="20">Against</li>
+                            <?=
+                                $for = 100;
+                                $against = rand(0,100);
+                                $for -= $against;
+                            ?>
+                            <li data-value="<?= $for ?>">For</li>
+                            <li data-value="<?= $against ?>">Against</li>
                         </ul>
                     </div>
                     <div class="vote-buttons">
@@ -19,7 +24,7 @@
                     </div>
                 </div>
                 <div class="media-body">
-                    <h1><?= htmlspecialchars($bill->title) ?></h1>
+                    <h1><?= htmlspecialchars($bill->title) ?> Bill</h1>
                     <p class="lead">
                         <?php
                             foreach (explode("\n", $bill->description) as $description) {
@@ -45,12 +50,16 @@
             <?php if ($bill->getBillText() == false): ?>
                 <h4 class="text-danger text-center">The text for this bill is not yet available.</h4>
             <?php else: ?>
-                <h4 class="pull-left">The current draft of the bill in full</h4>
-                <p class="pull-right" style="padding-top: 10px;">
-                    <a href="<?= $bill->getPdfUrl() ?>"><i class="fa fa-file"></i> View as PDF</a>
-                </p>
                 <div class="clearfix"></div>
                 <div class="panel panel-default" style="height: 500px; overflow: hidden; border-width: 4px;">
+                    <div class="panel-heading">
+                        <strong class="pull-left">The current draft of the bill as of <i class="fa fa-calendar"></i> <?= date('jS F, Y'); ?></strong>
+                        <div class="pull-right">
+                            <a href="<?= $bill->getPdfUrl() ?>"><i class="fa fa-file"></i> View as PDF</a>
+                            | <a href="<?= $bill->url ?>"><i class="fa fa-globe"></i> parliament.uk</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
                     <div class="panel-body" style="padding: 5px;">
                         <iframe width="100%" style="height: 480px; border: 0;" src="/bill-text/?id=<?= $bill->id ?>"></iframe>
                     </div>
@@ -80,8 +89,16 @@
             <p>
                 Sponsored by
             </p>
-            <?php foreach ($bill->getMembers() as $memberName): ?>
-                <h4><a href="#"><?= $memberName ?></a></h4>
+            <?php 
+                foreach ($bill->getMembers() as $memberName):
+                $member = Member::getMemberByName($memberName);
+            ?>
+                <h4>
+                    <?php if ($member->avatar): ?>
+                    <img class="avatar" width="36px;" height="42px" src="<?= $member->avatar ?>" />
+                    <?php endif; ?>
+                    <a href="<?= $member->url ?>"><?= htmlspecialchars($member->name) ?></a>
+                </h4>
             <?php endforeach; ?>
             <hr/>
             <!--
@@ -91,36 +108,41 @@
             </p>
             <hr/>
             -->
-            <h3>Progress</h3>
-            <?php
-                $phases = array('House of Commons' => array('First reading', 'Second reading', 'Committee stage', 'Report stage', 'Third reading'),
-                                'House of Lords' => array('First reading', 'Second reading', 'Committee stage', 'Report stage', 'Third reading'),   
-                                'Final stages' => array('Amendments', 'Royal assent')
-                                );
-                
-                $liClass = '';
-                $iconClass = 'fa-check';
-                $i = 0;
-                foreach ($phases as $phase => $stages) {
-                    echo '<h4>'.$phase.'</h4>';
-                    echo '<ol class="list-unstyled">';
-                    foreach ($stages as $stage) {
-                        echo '<li class="'.$liClass.'">';
-                        if ($i == $bill->stage) {
-                            echo '<i class="fa fa-arrow-right"></i> ';
-                            $liClass = "text-muted";
-                            $iconClass .= ' invisible';
-                        } else {
-                            echo '<i class="fa '.$iconClass.'"></i> ';
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <strong>Progress</strong>
+                </div>
+                <div class="panel-body" style="padding-top: 0;">
+                    <?php
+                        $phases = array('House of Commons' => array('First reading', 'Second reading', 'Committee stage', 'Report stage', 'Third reading'),
+                                        'House of Lords' => array('First reading', 'Second reading', 'Committee stage', 'Report stage', 'Third reading'),   
+                                        'Final stages' => array('Amendments', 'Royal assent')
+                                        );
+                        
+                        $liClass = '';
+                        $iconClass = 'fa-check';
+                        $i = 0;
+                        foreach ($phases as $phase => $stages) {
+                            echo '<h4>'.$phase.'</h4>';
+                            echo '<ol class="list-unstyled">';
+                            foreach ($stages as $stage) {
+                                echo '<li class="'.$liClass.'">';
+                                if ($i == $bill->stage) {
+                                    echo '<i class="fa fa-arrow-right"></i> ';
+                                    $liClass = "text-muted";
+                                    $iconClass .= ' invisible';
+                                } else {
+                                    echo '<i class="fa '.$iconClass.'"></i> ';
+                                }
+                                echo $stage;
+                                echo '</li>';
+                                $i++;
+                            }
+                            echo ' </ol>';
                         }
-                        echo $stage;
-                        echo '</li>';
-                        $i++;
-                    }
-                    echo ' </ol>';
-                }
-            ?>
-
+                    ?>
+                </div>
+            </div>
 <!--             <h4>Related documents</h4> -->
         </div>
     </div><!-- /.container -->
