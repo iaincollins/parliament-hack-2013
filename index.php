@@ -5,7 +5,13 @@
             <p class="lead">
                 Public consultation and review of draft bills
             </p>
-            <?php for ($i = 0; $i < 10; $i++) { ?>
+            <?php
+                foreach (Bills::getBills() as $bill):
+                
+                    // Ingoring bills that only have a title and no actual text uploaded yet
+                    //if ($bill->getBillTextUrl() == false)
+                    //    continue;
+             ?>
             <div class="media">
                 <div class="media-object pull-left" style="padding-top: 10px;">
                     <p>
@@ -14,22 +20,22 @@
                     <p>
                         <span class="text-danger">0 against</span>
                     <p>
-                    <div class="btn btn-sm btn-default"><i class="fa fa-chevron-up"></i></div>
-                    <div class="btn btn-sm btn-default"><i class="fa fa-chevron-down"></i></div>
+                    <div class="btn btn-sm btn-success"><i class="fa fa-chevron-up"></i></div>
+                    <div class="btn btn-sm btn-danger"><i class="fa fa-chevron-down"></i></div>
                 </div>
                 <div class="media-body">
-                    <h3 style="margin-top: 0;"><a href="/view-bill/">Name of the bill</a></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                    <h3 style="margin-top: 0;"><a href="/view-bill/?id=<?= $bill->id ?>" style="text-decoration: none;"><?= htmlspecialchars($bill->title) ?></a></h3>
+                    <p style="max-height: 40px; overflow: hidden;">
+                        <?= htmlspecialchars($bill->description) ?>
                     </p>
                     <p class="tags">
-                        <span class="label label-info">Tag</span>
-                        <span class="label label-info">Another tag</span>
+                        <?php foreach ($bill->tags as $tag): ?>
+                        <span class="label label-info"><?= htmlspecialchars($tag) ?></span>
+                        <?php endforeach; ?>
                     </p>
                 </div>
             </div>
-            <?php } ?>
+            <?php endforeach; ?>
         </div>
         <div class="col-md-3">
             <h3>Upcoming legislation</h3>

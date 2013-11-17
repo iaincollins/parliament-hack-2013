@@ -39,7 +39,7 @@ There is an RSS feed for bills:
 http://services.parliament.uk/bills/AllBills.rss
 
 There is also an XML dump of the data here:
-https://s3.amazonaws.com/ParliamentHack2013/Bills.zip)
+https://s3.amazonaws.com/ParliamentHack2013/Bills.zip
 
 Drafts of public bills are posted in a PDF here:
 http://www.parliament.uk/business/bills-and-legislation/current-bills/public-bill-list/

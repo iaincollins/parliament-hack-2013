@@ -1,0 +1,21 @@
+.label {
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+
+.label.label-info {
+    background: #4089e1;
+}
+
+.bill-text .linenumber {
+    display: none;
+}
+
+.bill-text *,
+.bill-text h2,
+.bill-text h3,
+.bill-text h4 {
+    font-size: 14px !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+}

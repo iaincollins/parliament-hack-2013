@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>Bills from current Parliamentary Session</title>
+		<link>http://services.parliament.uk/bills</link>
+		<description/>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Committee stage">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/antisocialbehaviourcrimeandpolicingbill.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/antisocialbehaviourcrimeandpolicingbill.html</link>
+			<category>Lords</category>
+			<category>Government Bill</category>
+			<title>Anti-social Behaviour, Crime and Policing</title>
+			<description>To make provision about anti-social behaviour, crime and disorder, including provision about recovery of possession of dwelling houses; to make provision amending the Dangerous Dogs Act 1991, Schedules 7 and 8 to the Terrorism Act 2000 and the Extradition Act 2003; to make provision about firearms and about forced marriage; to make provision about the police, the Independent
+Police Complaints Commission and the Serious Fraud Office; to make
+provision about criminal justice and court fees; and for connected purposes.</description>
+			<a10:updated>2013-11-15T23:10:03Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="3rd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/energy.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/energy.html</link>
+			<category>Lords</category>
+			<category>Government Bill</category>
+			<title>Energy</title>
+			<description>To make provision for or in connection with reforming the electricity market for purposes of encouraging low carbon electricity generation or ensuring security of supply; for the establishment and functions of the Office for Nuclear Regulation; about the government pipe-line and storage system and
+rights exercisable in relation to it; about the designation of a strategy and policy statement; for the making of orders requiring regulated persons to provide redress to consumers of gas or electricity; about offshore transmission of electricity during a commissioning period; for imposing further fees in
+respect of nuclear decommissioning costs; and for connected purposes.</description>
+			<a10:updated>2013-11-15T23:08:51Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Committee stage">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/localauditandaccountability.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/localauditandaccountability.html</link>
+			<category>Commons</category>
+			<category>Government Bill</category>
+			<title>Local Audit and Accountability</title>
+			<description>A Bill to make provision for, and in connection with, the abolition of the Audit Commission for local authorities and the National Health Service in England; to make provision about the accounts of local and certain other public authorities and the auditing of those accounts; to make provision about the appointment, functions and regulation of local auditors; to make provision about data matching; to make provision about examinations by the Comptroller and Auditor-General relating to English local and other public authorities; to make provision about the publication of information by smaller authorities; to make provision for directions to comply with codes of practice on local authority publicity; to make provision about council tax referendums; and for connected purposes.</description>
+			<a10:updated>2013-11-15T15:36:53Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Committee stage">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/immigration.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/immigration.html</link>
+			<category>Commons</category>
+			<category>Government Bill</category>
+			<title>Immigration</title>
+			<description>To make provision about immigration law; to limit, or otherwise make
+provision about, access to services, facilities and employment by reference to immigration status; to make provision about marriage and civil partnership involving certain foreign nationals; and for connected purposes.</description>
+			<a10:updated>2013-11-15T15:25:06Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Committee stage">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/gamblinglicensingandadvertising.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/gamblinglicensingandadvertising.html</link>
+			<category>Commons</category>
+			<category>Government Bill</category>
+			<title>Gambling (Licensing and Advertising)</title>
+			<description>A Bill To make provision about the licensing and advertising of gambling.</description>
+			<a10:updated>2013-11-15T15:07:38Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="3rd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/defencereform.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/defencereform.html</link>
+			<category>Commons</category>
+			<category>Government Bill</category>
+			<title>Defence Reform</title>
+			<description>To make provision in connection with any arrangements that may be made by the Secretary of State with respect to the provision to the Secretary of State of defence procurement services; to make provision relating to defence procurement contracts awarded, or amended, otherwise than as the result of a competitive process; to make provision in relation to the reserve forces of the Crown; and for connected purposes.</description>
+			<a10:updated>2013-11-15T13:56:31Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Committee stage">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/childrenandfamilies.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/childrenandfamilies.html</link>
+			<category>Lords</category>
+			<category>Government Bill</category>
+			<title>Children and Families</title>
+			<description>To make provision about children, families, and people with special educational needs; to make provision about the right to request flexible working; and for connected purposes</description>
+			<a10:updated>2013-11-14T23:44:41Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Report stage">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/financialservicesbankingreform.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/financialservicesbankingreform.html</link>
+			<category>Lords</category>
+			<category>Government Bill</category>
+			<title>Financial Services (Banking Reform)</title>
+			<description>To make further provision about banking and other financial services,
+including provision about the Financial Services Compensation Scheme; to
+make provision for the amounts owed in respect of certain deposits to be
+treated as a preferential debt on insolvency; to make provision about the
+accounts of the Bank of England and its wholly owned subsidiaries; and for
+connected purposes.</description>
+			<a10:updated>2013-11-14T23:34:53Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/rightsofthesovereignandtheduchyofcornwall.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/rightsofthesovereignandtheduchyofcornwall.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Rights of the Sovereign and the Duchy of Cornwall</title>
+			<description>A Bill to amend the Sovereign Grant Act 2011; to amend the succession to the title of the Duke of Cornwall; to redistribute the Duchy of Cornwall estate; and to remove the requirement for a Parliament to obtain the Queen's or Prince's consent to consideration of Bills passing through Parliament.</description>
+			<a10:updated>2013-11-14T03:26:58Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/pensions.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/pensions.html</link>
+			<category>Lords</category>
+			<category>Government Bill</category>
+			<title>Pensions</title>
+			<description>A Bill to make provision about pensions and about benefits payable to people in connection with bereavement; and for connected purposes.</description>
+			<a10:updated>2013-11-13T15:28:47Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Committee stage">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/nationalinsurancecontributions.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/nationalinsurancecontributions.html</link>
+			<category>Commons</category>
+			<category>Government Bill</category>
+			<title>National Insurance Contributions </title>
+			<description>To make provision in relation to national insurance contributions; and for connected purposes.</description>
+			<a10:updated>2013-11-13T14:40:11Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="3rd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/highspeedrailpreparation.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/highspeedrailpreparation.html</link>
+			<category>Lords</category>
+			<category>Government Bill</category>
+			<title>High Speed Rail (Preparation)</title>
+			<description>A Bill To make provision authorising expenditure in preparation for a high speed railway transport network.
+</description>
+			<a10:updated>2013-11-13T10:25:23Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/drinkdrivingrepeatoffenders.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/drinkdrivingrepeatoffenders.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Drink Driving (Repeat Offenders)</title>
+			<description>A Bill to allow the Magistrates Court discretion to refer a third or subsequent offence for drink driving to the Crown Court for sentencing and to grant the Crown Court the jurisdiction to give a custodial sentence of up to two years.</description>
+			<a10:updated>2013-11-13T09:11:35Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/permitteddevelopmentbasements.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/permitteddevelopmentbasements.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Permitted Development (Basements)</title>
+			<description>A Bill to regulate the construction of new basements and extensions to basements; and for connected purposes.</description>
+			<a10:updated>2013-11-13T09:01:03Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Committee stage">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/offenderrehabilitation.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/offenderrehabilitation.html</link>
+			<category>Commons</category>
+			<category>Government Bill</category>
+			<title>Offender Rehabilitation</title>
+			<description>A Bill to make provision about the release, and supervision after release, of offenders, to make provision about the extension period for extended sentence prisoners, to make provision about community orders and suspended sentence orders, and for connected purposes.</description>
+			<a10:updated>2013-11-13T05:47:08Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="3rd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/northernirelandmiscellaneousprovisions.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/northernirelandmiscellaneousprovisions.html</link>
+			<category>Commons</category>
+			<category>Government Bill</category>
+			<title>Northern Ireland (Miscellaneous Provisions)</title>
+			<description>To make provision about donations, loans and related transactions for
+political purposes in connection with Northern Ireland; to amend the
+Northern Ireland Assembly Disqualification Act 1975 and the Northern Ireland Act 1998; to make provision about the registration of electors and the administration of elections in Northern Ireland; and to make miscellaneous amendments in the law relating to Northern Ireland.</description>
+			<a10:updated>2013-11-13T05:42:03Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Committee stage">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/inheritanceandtrusteespowers.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/inheritanceandtrusteespowers.html</link>
+			<category>Lords</category>
+			<category>Government Bill</category>
+			<title>Inheritance and Trustees' Powers </title>
+			<description>To make further provision about the distribution of estates of deceased persons and to amend the law relating to the powers of trustees.</description>
+			<a10:updated>2013-11-12T12:29:43Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/benefitclaimantsautomatictransfertoalternativebenefits.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/benefitclaimantsautomatictransfertoalternativebenefits.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Benefit Claimants (Automatic Transfer to Alternative Benefits)</title>
+			<description>A Bill to ensure that individuals claiming state benefits are automatically enrolled onto alternative benefits to which they are entitled when a benefit ceases to be applicable; and for connected purposes.</description>
+			<a10:updated>2013-11-12T09:33:42Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/descendantsofdeceasedadoptedpeopleaccesstoinformation.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/descendantsofdeceasedadoptedpeopleaccesstoinformation.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Descendants of Deceased Adopted People (Access to Information)</title>
+			<description>A Bill to amend the Adoption and Children Act 2002 to allow access to information for the descendants of deceased adopted people; and for connected purposes.</description>
+			<a10:updated>2013-11-12T09:11:21Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Committee stage">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/transparencyoflobbyingnonpartycampaigningandtradeunionadministration.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/transparencyoflobbyingnonpartycampaigningandtradeunionadministration.html</link>
+			<category>Lords</category>
+			<category>Government Bill</category>
+			<title>Transparency of Lobbying, Non-party Campaigning and Trade Union Administration</title>
+			<description>Make provision for establishing and maintaining a register of persons carrying
+on the business of consultant lobbying and to require those persons to be
+entered in the register; to make provision about expenditure and donations for
+political purposes; to make provision about the Electoral Commission’s
+functions with respect to compliance with requirements imposed by or by
+virtue of enactments; to make provision relating to a trade union’s duty to
+maintain a register of members under section 24 of the Trade Union and
+Labour Relations (Consolidation) Act 1992; and for connected purposes.</description>
+			<a10:updated>2013-11-12T09:09:39Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="3rd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/europeanunionreferendum.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/europeanunionreferendum.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>European Union (Referendum)</title>
+			<description>A Bill to make provision for the holding of a referendum in the United Kingdom on the United Kingdom’s membership of the European Union.</description>
+			<a10:updated>2013-11-12T06:06:25Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="3rd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/humberbridge.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/humberbridge.html</link>
+			<category>Lords</category>
+			<category>Private Bill</category>
+			<title>Humber Bridge</title>
+			<description>A Bill to amend the constitution of the Humber Bridge Board and to confer new borrowing and other powers on it; to make new provision for the recovery of any deficit of the Board from local authorities in the area; to confer new powers for the setting and revision of tolls and to make other provision for and in connection with the operation of the bridge; and for connected purposes.</description>
+			<a10:updated>2013-11-11T14:54:26Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/apprenticeshipsandskillspublicprocurementcontracts.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/apprenticeshipsandskillspublicprocurementcontracts.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>Apprenticeships and Skills (Public Procurement Contracts)</title>
+			<description>A Bill to require certain public procurement contracts let by public authorities to include a commitment by the contractor to provide apprenticeships and skills training; and for connected purposes.</description>
+			<a10:updated>2013-11-11T09:34:44Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/houseoflordsmaximummembership.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/houseoflordsmaximummembership.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>House of Lords (Maximum Membership)</title>
+			<description>A Bill to provide for a maximum limit on the number of Peers entitled to vote in the House of Lords; and to provide for a moratorium on new appointments. </description>
+			<a10:updated>2013-11-11T09:33:58Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/foreignnationalsaccesstopublicservices.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/foreignnationalsaccesstopublicservices.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Foreign Nationals (Access to Public Services)</title>
+			<description>A Bill to restrict access by foreign nationals to United Kingdom public services for which no charge is made. </description>
+			<a10:updated>2013-11-11T09:33:27Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/asylumtimelimit.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/asylumtimelimit.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Asylum (Time Limit)</title>
+			<description>A Bill to require that asylum claims in the United Kingdom be lodged within three months of the claimant’s arrival in the United Kingdom; and that persons who have already entered the United Kingdom and wish to make an asylum claim must do so within three months of the passing of this Act. </description>
+			<a10:updated>2013-11-11T09:32:42Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/eumembershipauditofcostsandbenefits.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/eumembershipauditofcostsandbenefits.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>EU Membership (Audit of Costs and Benefits)</title>
+			<description>A Bill to require an independent audit of the benefits and costs of UK membership of the European Union. </description>
+			<a10:updated>2013-11-11T09:32:04Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/extensionoffranchisehouseoflords.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/extensionoffranchisehouseoflords.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Extension of Franchise (House of Lords)</title>
+			<description>A Bill to make provision for a Member of the House of Lords to vote at elections to the House of Commons.</description>
+			<a10:updated>2013-11-11T09:31:25Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/planningregulationsremovalofprovisionsinrespectofgypsiesandtravellers.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/planningregulationsremovalofprovisionsinrespectofgypsiesandtravellers.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Planning Regulations (Removal of Provisions in Respect of Gypsies and Travellers)</title>
+			<description>A Bill to make provision for the removal of provisions in planning regulations relating to Gypsies and Travellers.</description>
+			<a10:updated>2013-11-11T09:30:13Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/margaretthatcherday.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/margaretthatcherday.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Margaret Thatcher Day</title>
+			<description>A Bill to make provision that the annual Bank Holiday Monday in late August be known as Margaret Thatcher Day. </description>
+			<a10:updated>2013-11-11T09:29:15Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/healthandsocialcareamendmentfoodstandards.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/healthandsocialcareamendmentfoodstandards.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Health and Social Care (Amendment) (Food Standards)</title>
+			<description>A Bill to make provision for the regulation of food standards in hospitals.</description>
+			<a10:updated>2013-11-11T09:15:47Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/coronersandjusticeamendment.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/coronersandjusticeamendment.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Coroners and Justice (Amendment)</title>
+			<description>A Bill to amend section 62 of the Coroners and Justice Act 2009 so as to apply additionally to the possession of pornographic written material about children; to make consequential amendments to the Act; and for connected purposes.</description>
+			<a10:updated>2013-11-11T09:15:13Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/ageofcriminalresponsibility.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/ageofcriminalresponsibility.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Age of Criminal Responsibility</title>
+			<description>A Bill to raise the age of criminal responsibility, and for connected purposes.</description>
+			<a10:updated>2013-11-11T09:14:25Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/unsolicitedtelephonecommunications.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/unsolicitedtelephonecommunications.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Unsolicited Telephone Communications</title>
+			<description>A Bill to amend the Privacy and Electronic Communications (EC Directive) Regulations 2003.</description>
+			<a10:updated>2013-11-11T09:13:07Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/unsolicitedtelephonecallscallerlineidentification.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/unsolicitedtelephonecallscallerlineidentification.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Unsolicited Telephone Calls (Caller Line Identification) </title>
+			<description>A Bill to require disclosure of caller line identification by non-domestic callers; to require Ofcom to consider applications for exemption from such disclosure; to provide that telephone providers may not make a charge for providing caller line identification; and for connected purposes.</description>
+			<a10:updated>2013-11-07T08:56:44Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="3rd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/londonlocalauthoritiesandtransportforlondonno2hl.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/londonlocalauthoritiesandtransportforlondonno2hl.html</link>
+			<category>Commons</category>
+			<category>Private Bill</category>
+			<title>London Local Authorities and Transport for London (No. 2)</title>
+			<description>To confer further powers upon local authorities in London and upon Transport for London; and for related purposes.</description>
+			<a10:updated>2013-11-06T17:17:14Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/windfarmsubsidiesabolition.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/windfarmsubsidiesabolition.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Wind Farm Subsidies (Abolition)</title>
+			<description>A Bill to make provision for the cessation of subsidies for the development of wind farms.</description>
+			<a10:updated>2013-11-06T09:25:37Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/foreignaidringfencingabolition.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/foreignaidringfencingabolition.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Foreign Aid Ring-Fencing (Abolition)</title>
+			<description>A Bill to make provision for foreign aid and development not to be linked to a specific percentage of Gross National Income, but to be set yearly, by Parliament, in relation to need. </description>
+			<a10:updated>2013-11-06T09:24:53Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/sexualimproprietyinemployment.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/sexualimproprietyinemployment.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Sexual Impropriety in Employment</title>
+			<description>A Bill to require that claims by employees alleging sexual impropriety be limited to cases where the alleged misconduct is contrary to the criminal law and has been reported to the police. </description>
+			<a10:updated>2013-11-06T09:23:30Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/unitedkingdomwithdrawalfromtheeuropeanunion.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/unitedkingdomwithdrawalfromtheeuropeanunion.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>United Kingdom (Withdrawal from the European Union)</title>
+			<description>A Bill to make provision for the Government to give notice under Article 50 of the Treaty on the Functioning of the European Union; and for connected purposes.</description>
+			<a10:updated>2013-11-06T09:22:37Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/bbclicencefeecivildebt.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/bbclicencefeecivildebt.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>BBC Licence Fee (Civil Debt)</title>
+			<description>A Bill to make provision to decriminalise the non-payment of the BBC licence fee.</description>
+			<a10:updated>2013-11-06T09:21:30Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/equalityanddiversityreform.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/equalityanddiversityreform.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Equality and Diversity (Reform)</title>
+			<description>A Bill to prohibit the use of affirmative and positive action in recruitment and appointment processes; to amend the Equality Act 2010 to remove the special provision for political parties in relation to the selection of candidates; and for connected purposes.</description>
+			<a10:updated>2013-11-06T09:20:22Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/licensedhackneycarriagesandprivatehirevehiclesclosedcircuittelevision.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/licensedhackneycarriagesandprivatehirevehiclesclosedcircuittelevision.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Licensed Hackney Carriages and Private Hire Vehicles (Closed Circuit Television) </title>
+			<description>A Bill to require the installation of closed circuit television in licensed Hackney carriages and private hire vehicles; to establish a minimum standard for such installations; and for connected purposes.</description>
+			<a10:updated>2013-11-06T09:19:02Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/hertfordshirecountycouncilfilmingonhighways.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/hertfordshirecountycouncilfilmingonhighways.html</link>
+			<category>Commons</category>
+			<category>Private Bill</category>
+			<title>Hertfordshire County Council (Filming on Highways)</title>
+			<description>A Bill to confer powers on Hertfordshire County Council in relation to filming on highways; and for related purposes.</description>
+			<a10:updated>2013-11-05T19:05:15Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/smokingprivatemembersclubs.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/smokingprivatemembersclubs.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Smoking (Private Members’ Clubs)</title>
+			<description>A Bill to make provision to allow smoking in a separate ventilated room in a private members’ club if a majority of the members of the club so decide.</description>
+			<a10:updated>2013-11-04T09:16:35Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/accesstomentalhealthservices.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/accesstomentalhealthservices.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Access to Mental Health Services</title>
+			<description>A Bill to provide for establishing maximum waiting times and establishing standards for access to evidence-based psychological therapies for those with mental health problems; and for connected purposes.</description>
+			<a10:updated>2013-11-04T09:14:45Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/communicationsunsolicitedtelephonecallsandtexts.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/communicationsunsolicitedtelephonecallsandtexts.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>Communications (Unsolicited Telephone Calls and Texts)</title>
+			<description>A Bill to reduce the incidence of unsolicited telephone calls and texts received by consumers; and for connected purposes.</description>
+			<a10:updated>2013-11-04T09:13:51Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/freedomofinformationprivatehealthcarecompanies.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/freedomofinformationprivatehealthcarecompanies.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Freedom of Information (Private Healthcare Companies)</title>
+			<description>A Bill to amend the Freedom of Information Act 2000 to apply to private healthcare companies; and for connected purposes.</description>
+			<a10:updated>2013-11-01T08:52:49Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/care.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/care.html</link>
+			<category>Commons</category>
+			<category>Government Bill</category>
+			<title>Care</title>
+			<description>A Bill to reform the law relating to care and support for adults and the law relating to support for carers, to make provision about safeguarding adults from abuse or neglect, to make provision about care standards, to establish and make provision about Health Education England, to establish and make provision about the Health Research Authority, and for connected purposes.</description>
+			<a10:updated>2013-10-31T09:47:13Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/alanturingstatutorypardon.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/alanturingstatutorypardon.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Alan Turing (Statutory Pardon)</title>
+			<description>A Bill to give a statutory pardon to Alan Mathison Turing for offences under Section 11 of the Criminal Law Amendment Act 1885 of which he was convicted on 31 March 1952.</description>
+			<a10:updated>2013-10-31T09:43:56Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/hatecrimepeoplewithlearningdifficultiesandlearningdisabilities.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/hatecrimepeoplewithlearningdifficultiesandlearningdisabilities.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Hate Crime (People with Learning Difficulties and Learning Disabilities) </title>
+			<description>A Bill to require police forces to register hate crimes committed against people with learning difficulties and learning disabilities including autism; and for connected purposes.</description>
+			<a10:updated>2013-10-31T09:06:13Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/youngapprenticeships.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/youngapprenticeships.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Young Apprenticeships</title>
+			<description>A Bill to provide for young apprenticeships for 14 to 16 year olds; and for connected purposes.</description>
+			<a10:updated>2013-10-30T09:39:34Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/officeofthedeputyprimeministerabolition.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/officeofthedeputyprimeministerabolition.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Office of the Deputy Prime Minister (Abolition)</title>
+			<description>A Bill to make provision for the abolition of the Office of the Deputy Prime Minister, and its responsibilities to be allocated to other Departments of State.</description>
+			<a10:updated>2013-10-30T09:38:08Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/romanianandbulgarianaccessionlabourrestriction.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/romanianandbulgarianaccessionlabourrestriction.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Romanian and Bulgarian Accession (Labour Restriction)</title>
+			<description>A Bill to make provision for restrictions on the residence in the UK of Bulgarian and Romanian nationals to continue. </description>
+			<a10:updated>2013-10-30T09:37:25Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/withdrawalfromtheeuropeanconventionofhumanrightsandremovalofallegedterrorists.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/withdrawalfromtheeuropeanconventionofhumanrightsandremovalofallegedterrorists.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Withdrawal from the European Convention of Human Rights and Removal of Alleged Terrorists</title>
+			<description>A Bill to make provision for an application to the Council of Europe to withdraw from the European Convention of Human Rights and to deport alleged terrorists subject to approval by the British courts.</description>
+			<a10:updated>2013-10-30T09:36:45Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/slavery.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/slavery.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Slavery</title>
+			<description>A Bill to require the Secretary of State to take steps to eradicate slavery; and for connected purposes.</description>
+			<a10:updated>2013-10-30T09:35:04Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/residentialroadsadoptionbylocalhighwaysauthority.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/residentialroadsadoptionbylocalhighwaysauthority.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Residential Roads (Adoption by Local Highways Authority)</title>
+			<description>A Bill to require the handover of residential roads built by developers to local highways authorities within certain time periods; and for connected purposes. </description>
+			<a10:updated>2013-10-30T09:33:07Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Committee stage">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/citizenshiparmedforces.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/citizenshiparmedforces.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>Citizenship (Armed Forces)</title>
+			<description>A Bill to make provision in connection with applications for naturalisation as a British citizen made by members or former members of the armed forces.</description>
+			<a10:updated>2013-10-30T09:32:07Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/equalitytitles.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/equalitytitles.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Equality (Titles)</title>
+			<description>A Bill to make provision for the succession of female heirs to hereditary titles; for husbands and civil partners of those receiving honours to be allowed to use equivalent honorary titles to those available to wives; and for connected purposes.</description>
+			<a10:updated>2013-10-29T22:49:08Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/votingagecomprehensivereduction.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/votingagecomprehensivereduction.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Voting Age (Comprehensive Reduction)</title>
+			<description>A Bill to extend the franchise for parliamentary and other elections, and for referendums, to all citizens over the age of 16 years.</description>
+			<a10:updated>2013-10-29T22:47:42Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/communicationsupportdeafness.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/communicationsupportdeafness.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>Communication Support (Deafness)</title>
+			<description>A Bill to establish a body to assess provision of communication support for Deaf people and to make recommendations; and for connected purposes.</description>
+			<a10:updated>2013-10-28T15:21:30Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/graduateddrivinglicencescheme.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/graduateddrivinglicencescheme.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>Graduated Driving Licence Scheme</title>
+			<description>A Bill to make provision for a graduated driving licence scheme; and for connected purposes.</description>
+			<a10:updated>2013-10-28T15:20:46Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/propertyblightcompensation.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/propertyblightcompensation.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>Property Blight Compensation</title>
+			<description>A Bill to require the Secretary of State to amend legislation to improve the system of compensation for property blight caused by major national infrastructure projects; and for connected purposes.</description>
+			<a10:updated>2013-10-28T15:15:02Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/drugdrivingassessmentofdrugmisuse.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/drugdrivingassessmentofdrugmisuse.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>Drug Driving (Assessment of Drug Misuse)</title>
+			<description>A Bill to provide for the assessment of drug dependency or propensity for drug misuse of persons who, in the course of investigations for certain driving offences, have provided blood or urine samples that reveal the presence of certain drugs; and for connected purposes.</description>
+			<a10:updated>2013-10-28T10:07:45Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/prisonsdrugtesting.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/prisonsdrugtesting.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>Prisons (Drug Testing)</title>
+			<description>A Bill to make provision about the drugs for which persons detained in prisons and similar institutions may be tested.</description>
+			<a10:updated>2013-10-28T10:06:29Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/asylumseekersreturntonearestsafecountry.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/asylumseekersreturntonearestsafecountry.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Asylum Seekers (Return to Nearest Safe Country)</title>
+			<description>A Bill to facilitate the transfer of asylum seekers to the safe country nearest their country of origin. </description>
+			<a10:updated>2013-10-28T10:05:37Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/foreignnationaloffendersexclusionfromtheunitedkingdom.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/foreignnationaloffendersexclusionfromtheunitedkingdom.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Foreign National Offenders (Exclusion from the United Kingdom)</title>
+			<description>A Bill to make provision to exclude from the United Kingdom foreign nationals found guilty of a criminal offence committed in the United Kingdom.</description>
+			<a10:updated>2013-10-28T10:04:32Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/youngoffendersparentalresponsibility.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/youngoffendersparentalresponsibility.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Young Offenders (Parental Responsibility)</title>
+			<description>A Bill to make provision for the parents of young offenders to be legally responsible for their actions. </description>
+			<a10:updated>2013-10-28T10:03:05Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/privatelandlordsandlettingandmanagingagentsregulation.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/privatelandlordsandlettingandmanagingagentsregulation.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>Private Landlords and Letting and Managing Agents (Regulation)</title>
+			<description>A Bill to establish a mandatory national register of private landlords; to introduce regulation of private sector letting agents and managing agents; to establish a body to administer the national register and to monitor compliance with regulations applying to letting agents and managing agents; to require all tenancy agreements entered into with private landlords to take the form of written agreements; and for connected purposes.</description>
+			<a10:updated>2013-10-28T10:01:00Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/medicinallabelling.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/medicinallabelling.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Medicinal Labelling</title>
+			<description>A Bill to require the declaration relating to animal research to be placed on medicinal products' labels.</description>
+			<a10:updated>2013-10-28T09:29:24Z</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/footballgovernance.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/footballgovernance.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Football Governance</title>
+			<description>A Bill to reform the governance of football in England to make it more transparent and accountable; to ensure fair financial dealings between professional football clubs and their supporters; and for connected purposes.</description>
+			<a10:updated>2013-10-25T09:04:10+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/counsellorsandpsychotherapists.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/counsellorsandpsychotherapists.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Counsellors and Psychotherapists (Regulation)</title>
+			<description>A Bill to provide that the Health Professionals Council be the regulatory body for counsellors and psychotherapists; and for connected purposes</description>
+			<a10:updated>2013-10-24T09:40:08+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/victimsandsurvivorsnorthernireland.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/victimsandsurvivorsnorthernireland.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Victims and Survivors (Northern Ireland)</title>
+			<description>A Bill to amend the definitions of victims and survivors for the purposes of the Northern Ireland Act 1998, the Victims and Survivors (Northern Ireland) Order 2006 and related legislation; and for connected purposes.</description>
+			<a10:updated>2013-10-24T09:34:51+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/marriedcouplestaxallowance.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/marriedcouplestaxallowance.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Married Couples (Tax Allowance)</title>
+			<description>A Bill to make provision for a tax allowance for married couples.</description>
+			<a10:updated>2013-10-24T09:33:58+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/departmentofenergyandclimatechangeabolition.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/departmentofenergyandclimatechangeabolition.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Department of Energy and Climate Change (Abolition)</title>
+			<description>A Bill to make provision for the abolition of the Department of Energy and Climate Change and for its functions to be absorbed into the Department for Business, Innovation and Skills.</description>
+			<a10:updated>2013-10-24T09:33:25+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/fundingforlocalauthorities.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/fundingforlocalauthorities.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Funding for Local Authorities</title>
+			<description>A Bill to establish a commission to identify the changes in the law necessary to provide for the differing requirements for funding of local authorities taking into account the varying demand for the services they provide; and for connected purposes</description>
+			<a10:updated>2013-10-24T09:32:44+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Report stage">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/cityoflondonvariouspowershl.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/cityoflondonvariouspowershl.html</link>
+			<category>Commons</category>
+			<category>Private Bill</category>
+			<category>Financial institutions</category>
+			<title>City of London (Various Powers)</title>
+			<description>A Bill to amend the provision for the control of street trading in the City of London; to make provision relating to City walkways; and for related purposes.</description>
+			<a10:updated>2013-10-23T10:42:41+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/europeanunionapprovals.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/europeanunionapprovals.html</link>
+			<category>Commons</category>
+			<category>Government Bill</category>
+			<title>European Union (Approvals)</title>
+			<description>A Bill to Make provision approving for the purposes of section 8 of the European Union Act 2011 certain draft decisions under Article 352 of the Treaty on the Functioning of the European Union</description>
+			<a10:updated>2013-10-23T10:31:57+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/educationinformationsharing.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/educationinformationsharing.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>Education (Information Sharing)</title>
+			<description>A Bill to make provision about the disclosure and use of information relating to persons who are or have been in education or training.</description>
+			<a10:updated>2013-10-23T09:45:41+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/medicalinnovationno2.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/medicalinnovationno2.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Medical Innovation (No. 2)</title>
+			<description>A Bill to make provision about innovation in medical treatment.</description>
+			<a10:updated>2013-10-21T09:33:25+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/railways.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/railways.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Railways</title>
+			<description>A Bill to require the Secretary of State to assume control of passenger rail franchises when they come up for renewal; and for connected purposes.</description>
+			<a10:updated>2013-10-21T09:32:20+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Committee stage">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/houseoflordsreformno2.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/houseoflordsreformno2.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>House of Lords Reform (No. 2)</title>
+			<description>A Bill to make provision for retirement from the House of Lords; and to make provision for the expulsion of Members of the House of Lords in specified circumstances.</description>
+			<a10:updated>2013-10-21T09:24:27+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/charitablestatusforreligiousinstitutions.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/charitablestatusforreligiousinstitutions.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Charitable Status for Religious Institutions</title>
+			<description>a Bill to make provision for a presumption that religious institutions meet the public benefit test for charitable status. </description>
+			<a10:updated>2013-10-17T09:22:02+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/parentalbereavementleavestatutoryentitlement.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/parentalbereavementleavestatutoryentitlement.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Parental Bereavement Leave (Statutory Entitlement)</title>
+			<description>A Bill to make provision for statutory entitlement to leave of absence from employment for bereaved parents; and for connected purposes.</description>
+			<a10:updated>2013-10-17T09:20:42+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/gibraltarmaritimeprotection.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/gibraltarmaritimeprotection.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Gibraltar (Maritime Protection)</title>
+			<description>A Bill to make provision to protect the seas around Gibraltar; and for connected purposes.</description>
+			<a10:updated>2013-10-17T09:10:30+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Committee stage">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/deepseamining.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/deepseamining.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>Deep Sea Mining</title>
+			<description>A Bill to make provision about deep sea mining; and for connected purposes.</description>
+			<a10:updated>2013-10-16T11:16:18+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/regulationoftheprivaterentedsector.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/regulationoftheprivaterentedsector.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Regulation of the Private Rented Sector</title>
+			<description>A Bill to provide for the regulation of letting agents; to protect tenants’ deposits; to require the enforcement of environmental and energy-efficiency standards in private-sector rented accommodation; to amend the law on secure tenancies; to provide for fair rent to be applicable to all rented accommodation; to require landlords not to discriminate against people in receipt of state benefits; to require local authorities to establish a private rented sector office; and for connected purposes.</description>
+			<a10:updated>2013-10-16T09:40:30+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/lettingagentscompetitionchoiceandstandards.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/lettingagentscompetitionchoiceandstandards.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Letting Agents (Competition, Choice and Standards)</title>
+			<description>A Bill to establish a national mandatory licensing scheme for letting and managing agents, with established standards and redress for landlords, tenants and leaseholders, and prohibition of letting and management agent fees; to enable local authorities to administer and enforce the scheme; to require that tenants, landlords and leaseholders have written agreements; and to empower local authorities, either alone or in partnership, to trade as letting and managing agents.</description>
+			<a10:updated>2013-10-15T10:05:39+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/highcostcredit.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/highcostcredit.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>High Cost Credit</title>
+			<description>A Bill to make provision for regulating high-cost credit arrangements and providers of such arrangements; to provide for controls on advertising, information and communications associated with such arrangements; to make measures to address the cost and affordability of such credit arrangements and their associated charges; to regulate matters concerning repayments under such arrangements; to make provision on advice and advice services in relation to debt arising from such arrangements; and for connected purposes.</description>
+			<a10:updated>2013-10-15T09:59:51+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="1st reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/defamationparliamentaryproceedingsamendment.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/defamationparliamentaryproceedingsamendment.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Defamation (Parliamentary Proceedings) (Amendment)</title>
+			<description>To reform the law of liability in defamation proceedings for reports of Parliamentary proceedings; and to repeal section 13 of the Defamation Act 1996.</description>
+			<a10:updated>2013-10-11T09:16:06+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="1st reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/cohabitationrights.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/cohabitationrights.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Cohabitation Rights</title>
+			<description>A Bill to provide certain protections for people who live together as a couple or who have lived together as a couple; and to make provision about the property of deceased persons who are survived by a cohabitant; and for connected purposes</description>
+			<a10:updated>2013-10-10T09:56:05+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/localgovernmentreligiousetcobservances.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/localgovernmentreligiousetcobservances.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>Local Government (Religious etc. Observances)</title>
+			<description>A Bill to make provision about the inclusion at local authority meetings of observances that are, and about powers of local authorities in relation to events that to any extent are, religious or related to a religious or philosophical belief.</description>
+			<a10:updated>2013-10-09T09:44:15+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/intellectualproperty.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/intellectualproperty.html</link>
+			<category>Commons</category>
+			<category>Government Bill</category>
+			<title>Intellectual Property</title>
+			<description>A Bill to make provision about intellectual property.</description>
+			<a10:updated>2013-10-07T16:04:48+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/facecoveringsprohibition.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/facecoveringsprohibition.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Face Coverings (Prohibition)</title>
+			<description>A Bill to prohibit the wearing of certain face coverings; and for connected purposes.</description>
+			<a10:updated>2013-09-18T11:24:52+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/europeancommunitiesact1972repeal.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/europeancommunitiesact1972repeal.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>European Communities Act 1972 (Repeal)</title>
+			<description>A Bill to repeal the European Communities Act 1972 and related legislation; and for connected purposes. </description>
+			<a10:updated>2013-09-18T11:23:11+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/mesothelioma.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/mesothelioma.html</link>
+			<category>Commons</category>
+			<category>Government Bill</category>
+			<title>Mesothelioma</title>
+			<description>A Bill to establish a diffuse mesothelioma payments scheme and make related provision, and to make provision about the resolution of certain insurance disputes.</description>
+			<a10:updated>2013-09-17T14:02:11+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Committee stage">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/genderequalityinternationaldevelopment.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/genderequalityinternationaldevelopment.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>Gender Equality (International Development)</title>
+			<description>A Bill to promote gender equality in the provision by the Government of development assistance and humanitarian assistance to countries outside the United Kingdom; and for connected purposes.</description>
+			<a10:updated>2013-09-16T10:02:40+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/deliverysurchargestransparencyforconsumers.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/deliverysurchargestransparencyforconsumers.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>Delivery Surcharges (Transparency for Consumers)</title>
+			<description>A Bill to require online retailers to declare to consumers at the start of the retail process the existence of surcharges for delivery to certain addresses in the UK; and for connected purposes.</description>
+			<a10:updated>2013-09-16T09:56:55+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/representationofthepeopleact1981amendment.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/representationofthepeopleact1981amendment.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Representation of the People Act 1981 (Amendment)</title>
+			<description>A Bill to amend the Representation of the People Act 1981 to amend the period of imprisonment which disqualifies a person from membership of the House of Commons; and for connected purposes.</description>
+			<a10:updated>2013-09-12T16:39:40+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/localgovernmentmiscellaneousprovisionsact1982amendment.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/localgovernmentmiscellaneousprovisionsact1982amendment.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Local Government (Miscellaneous Provisions) Act 1982 (Amendment)</title>
+			<description>A Bill to amend the Local Government (Miscellaneous Provisions) Act 1982 to require those providing a service from a fixed pitch in a designated area to apply for a licence to trade; and for connected purposes.</description>
+			<a10:updated>2013-09-09T09:49:56+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/specialistprintingequipmentandmaterialsoffences.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/specialistprintingequipmentandmaterialsoffences.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Specialist Printing Equipment and Materials (Offences)</title>
+			<description>A Bill to make provision for an offence in respect of supplies of specialist printing equipment and related materials; and for connected purposes.</description>
+			<a10:updated>2013-09-09T09:38:10+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/localgovernmentreviewofdecisions.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/localgovernmentreviewofdecisions.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Local Government (Review of Decisions)</title>
+			<description>A Bill to make provision about the procedure for conducting investigations under Part 3 of the Local Government Act 1974; and to make provision for cases where an authority to which that Part applies takes a decision that affects the holding of an event for a reason relating to health or safety.</description>
+			<a10:updated>2013-09-09T09:37:02+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/nationalservice.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/nationalservice.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>National Service</title>
+			<description>A Bill to provide a system of national service for young persons; and for connected purposes.</description>
+			<a10:updated>2013-09-09T09:32:06+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/unitedkingdomcorporateandindividualtaxandfinancialtransparency.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/unitedkingdomcorporateandindividualtaxandfinancialtransparency.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>United Kingdom Corporate and Individual Tax and Financial Transparency</title>
+			<description>A Bill to require disclosure of various financial information by large companies; to provide for disclosure of beneficial ownership; to require banks to disclose to Her Majesty’s Revenue and Customs the identity of certain companies holding bank accounts; to require the publication of the tax returns of individuals with an income of more than a certain level and the largest two hundred and fifty UK companies; and for connected purposes.</description>
+			<a10:updated>2013-09-09T09:20:44+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/executivepayandremuneration.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/executivepayandremuneration.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Executive Pay and Remuneration</title>
+			<description>A Bill to require that companies’ remuneration committees have employee representation; to require that companies hold an annual binding shareholder vote on executive remuneration; and for connected purposes.</description>
+			<a10:updated>2013-09-06T08:06:44+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="1st reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/bbctrusteeelectionandlicencefee.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/bbctrusteeelectionandlicencefee.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>BBC (Trustee Election and Licence Fee)</title>
+			<description>To make provision for election of the trustees of the BBC by licence fee payers; and in relation to civil enforcement of non-payment of TV licence fees.</description>
+			<a10:updated>2013-07-31T10:43:23+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Royal Assent">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/marriagesamesexcouplesbill.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/marriagesamesexcouplesbill.html</link>
+			<category>Not assigned</category>
+			<category>Government Bill</category>
+			<title>Marriage (Same Sex Couples)</title>
+			<description>A Bill to make provision for the marriage of same sex couples in England and Wales, about gender change by married persons and civil partners, about consular functions in relation to marriage, for the marriage of armed forces personnel overseas, for permitting marriages according to the usages of belief organisations to be solemnized on the authority of certificates of a superintendent registrar, for the review of civil partnership, for the review of survivor benefits under occupational pension schemes, and for connected purposes.</description>
+			<a10:updated>2013-07-23T12:01:50+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Royal Assent">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/finance.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/finance.html</link>
+			<category>Not assigned</category>
+			<category>Government Bill</category>
+			<title>Finance</title>
+			<description>A Bill To grant certain duties, to alter other duties, and to amend the law relating to the National Debt and the Public Revenue, and to make further provision in connection with finance.</description>
+			<a10:updated>2013-07-23T11:58:56+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Royal Assent">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/supplyandappropriationmainestimates.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/supplyandappropriationmainestimates.html</link>
+			<category>Not assigned</category>
+			<category>Government Bill</category>
+			<title>Supply and Appropriation (Main Estimates)</title>
+			<description>Authorise the use of resources for the year ending with 31 March 2014; to authorise both the issue of sums out of the Consolidated Fund and the application of income for that year; and to appropriate the supply authorised for that year by this Act and by the Supply and Appropriation (Anticipation and Adjustments) Act 2013.</description>
+			<a10:updated>2013-07-23T11:58:16+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="1st reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/mutualsredeemableshares.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/mutualsredeemableshares.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Mutuals’ Redeemable Shares</title>
+			<description>A Bill to enable the law relating to societies registered under the Industrial and Provident Societies Act 1965 or the Friendly Societies Act 1992 and certain mutual insurers to be amended to permit and facilitate the use of a new and additional class of redeemable share capital; to provide consequential rights to members of such societies or insurers; and to restrict the voting rights of certain members who hold such shares.</description>
+			<a10:updated>2013-07-23T11:50:04+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/cleanneighbourhoodsandenvironmentamendment.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/cleanneighbourhoodsandenvironmentamendment.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Clean Neighbourhoods and Environment (Amendment)</title>
+			<description>A Bill to raise the penalty for littering offences; and to require local authorities to provide appropriate and convenient litter disposal points for the entrances to public buildings.</description>
+			<a10:updated>2013-07-22T10:44:34+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/litteringfromvehicles.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/litteringfromvehicles.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Littering from Vehicles</title>
+			<description>A Bill to introduce a civil penalty for littering from vehicles and to require local authorities to publish details of contracts relating to litter clearance.</description>
+			<a10:updated>2013-07-22T10:43:21+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/electoralregisteraccesstopublicservices.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/electoralregisteraccesstopublicservices.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (under the Ten Minute Rule, SO No 23)</category>
+			<title>Electoral Register (Access to Public Services)</title>
+			<description>A Bill to introduce a requirement that electoral registration be a condition of access to public services; and for connected purposes.</description>
+			<a10:updated>2013-07-18T10:33:46+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/selectivelicensinghousingstandards.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/selectivelicensinghousingstandards.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Selective Licensing (Housing Standards)</title>
+			<description>A Bill to allow local authorities to apply selective licensing conditions to improve housing standards.</description>
+			<a10:updated>2013-07-18T10:28:53+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/childmaltreatment.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/childmaltreatment.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Ballot Bill)</category>
+			<title>Child Maltreatment</title>
+			<description>A Bill to make provision about the physical and emotional welfare of children; and for connected purposes.</description>
+			<a10:updated>2013-07-15T09:35:53+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/culturalandcommunitydistributionderegulation.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/culturalandcommunitydistributionderegulation.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Cultural and Community Distribution Deregulation</title>
+			<description>A Bill to amend the Environmental Protection Act 1990 with respect to the distribution of printed matter for events which involve small-scale performance of live music and other entertainment, and for connected purposes.</description>
+			<a10:updated>2013-07-08T09:48:10+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="1st reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/marriageapprovedorganisations.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/marriageapprovedorganisations.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Marriage (Approved Organisations)</title>
+			<description>A Bill to amend the law on marriage to permit the Registrar General to permit certain charitable organisations to solemnise marriages</description>
+			<a10:updated>2013-07-04T02:28:17+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/water.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/water.html</link>
+			<category>Commons</category>
+			<category>Government Bill</category>
+			<title>Water</title>
+			<description>To make provision about the water industry; about compensation for modification of licences to abstract water; about main river maps; about records of waterworks; for the regulation of the water environment; about the provision of flood insurance for household premises; about internal drainage boards; about Regional Flood and Coastal Committees; and for connected purposes.</description>
+			<a10:updated>2013-07-02T18:35:45+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/zerohourscontracts.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/zerohourscontracts.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Zero Hours Contracts</title>
+			<description>A Bill to prohibit the use of zero hours employment contracts.</description>
+			<a10:updated>2013-06-25T13:33:02+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/gangmasterslicensingauthorityextensionofpowers.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/gangmasterslicensingauthorityextensionofpowers.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Gangmasters Licensing Authority (Extension of Powers)</title>
+			<description>A Bill to extend the powers of the Gangmasters Licensing Authority to enable it to regulate employment agencies in all sectors of the economy; and for connected purposes.</description>
+			<a10:updated>2013-06-25T13:30:23+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/jobsguaranteeschemeresearch.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/jobsguaranteeschemeresearch.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Jobs Guarantee Scheme (Research)</title>
+			<description>A Bill to require the Secretary of State to undertake a programme of research into a scheme designed to provide guaranteed employment for those aged 18 to 24 and those aged 25 and over who have been in receipt of Jobseekers Allowance for 1 year or for 2 years; to require the Secretary of State to report the results of the research to the House of Commons within six months of completion; and for connected purposes.</description>
+			<a10:updated>2013-06-25T13:20:32+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/internationaldevelopmentofficialdevelopmentassistancetarget.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/internationaldevelopmentofficialdevelopmentassistancetarget.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>International Development (Official Development Assistance Target)</title>
+			<description>A Bill to make provision about the meeting by the United Kingdom of the target for official development assistance (ODA) to constitute 0.7 per cent of gross national income; to make provision for independent verification that ODA is spent efficiently and effectively; and for connected purposes. </description>
+			<a10:updated>2013-06-25T13:17:23+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/lobbyistsregistrationofcodeofconduct.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/lobbyistsregistrationofcodeofconduct.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Lobbyists (Registration of Code of Conduct)</title>
+			<description>A Bill to establish a public register of organisations and individuals that carry out lobbying of Parliament, the Government and local authorities for financial gain; to introduce a code of conduct for those on the register; to introduce sanctions for non-registration and non-compliance with the code of conduct; and for connected purposes. </description>
+			<a10:updated>2013-06-25T13:14:36+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/traincompaniesminimumfares.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/traincompaniesminimumfares.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Train Companies (Minimum Fares)</title>
+			<description>A Bill to require train companies to offer customers the cheapest available fare as a first option; and for connected purposes. </description>
+			<a10:updated>2013-06-25T13:11:52+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/armedforcespreventionofdiscrimination.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/armedforcespreventionofdiscrimination.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Armed Forces (Prevention of Discrimination)</title>
+			<description>A Bill to provide that certain offences committed towards members of the armed forces shall be treated as aggravated; to prohibit discrimination against individuals in terms of provision of goods and services on the grounds that they are members of the armed forces; and for connected purposes. </description>
+			<a10:updated>2013-06-25T13:09:00+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/employmentopportunities.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/employmentopportunities.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Employment Opportunities</title>
+			<description>A Bill to introduce more freedom, flexibility and opportunity for those seeking employment in the public and private sectors; and for connected purposes. </description>
+			<a10:updated>2013-06-25T13:03:37+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/controlofoffshorewindturbines.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/controlofoffshorewindturbines.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Control of Offshore Wind Turbines</title>
+			<description>A Bill to restrict the height, number, location and subsidies of wind turbines situated offshore within 20 miles of the coast. </description>
+			<a10:updated>2013-06-25T13:00:59+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/collectionofnationalitydata.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/collectionofnationalitydata.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Collection of Nationality Data</title>
+			<description>A Bill to require the collection and publication of information relating to the nationality of those in receipt of benefits and of those to whom national insurance numbers are issued.</description>
+			<a10:updated>2013-06-25T12:51:06+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/illegalimmigrantscriminalsanctions.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/illegalimmigrantscriminalsanctions.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Illegal Immigrants (Criminal Sanctions)</title>
+			<description>A Bill to make provision for criminal sanctions against those who have entered the UK illegally or who have remained in the UK without legal authority. </description>
+			<a10:updated>2013-06-25T12:45:01+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/benefitentitlementrestriction.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/benefitentitlementrestriction.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Benefit Entitlement (Restriction)</title>
+			<description>A Bill to make provision to restrict the entitlement of non-UK Citizens from the European Union and the European Economic Area to taxpayer-funded benefits.</description>
+			<a10:updated>2013-06-25T12:42:17+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/primeministerreplacement.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/primeministerreplacement.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Prime Minister (Replacement)</title>
+			<description>A Bill to make provision for appointment of a Prime Minister in the event that a Prime Minister is temporarily or permanently incapacitated.</description>
+			<a10:updated>2013-06-25T12:30:11+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/bbcprivatisation.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/bbcprivatisation.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>BBC Privatisation</title>
+			<description>A Bill to make provision for the privatisation of the British Broadcasting Corporation by providing shares in the Corporation to all licence fee payers.</description>
+			<a10:updated>2013-06-25T12:24:14+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/samesexmarriagereferendum.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/samesexmarriagereferendum.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Same Sex Marriage (Referendum)</title>
+			<description>A Bill to make provision for a referendum on whether same sex marriage should be allowed. </description>
+			<a10:updated>2013-06-25T11:56:22+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/leaseholdreformamendment.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/leaseholdreformamendment.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Leasehold Reform (Amendment)</title>
+			<description>A Bill to amend the Leasehold Reform, Housing and Urban Development Act 1993 in relation to the permitted signatories of notices; and for connected purposes.</description>
+			<a10:updated>2013-06-25T11:24:33+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/sentencingescalator.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/sentencingescalator.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Sentencing Escalator</title>
+			<description>A Bill to provide that a criminal reconvicted for an offence on a second or further occasion receives a longer sentence than for the first such offence. </description>
+			<a10:updated>2013-06-25T11:21:13+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/governmentdepartmentsamalgamationofscotlandofficewalesofficeandnorthernirelandoffice.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/governmentdepartmentsamalgamationofscotlandofficewalesofficeandnorthernirelandoffice.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Government Departments (Amalgamation of Scotland Office, Wales Office and Northern Ireland Office)</title>
+			<description>A Bill to make provision for the amalgamation of the Scotland, Wales and Northern Ireland Offices. </description>
+			<a10:updated>2013-06-25T11:03:52+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/capitalpunishment.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/capitalpunishment.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Capital Punishment</title>
+			<description>A Bill to allow for capital punishment for certain offences. </description>
+			<a10:updated>2013-06-25T10:57:58+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/schoolgoverningbodiesadverseweatherconditions.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/schoolgoverningbodiesadverseweatherconditions.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>School Governing Bodies (Adverse Weather Conditions)</title>
+			<description>A Bill to require school governing bodies and headteachers to make provision to keep schools open in adverse weather conditions.</description>
+			<a10:updated>2013-06-25T10:54:35+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/fishinggroundsandterritorialwatersrepatriation.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/fishinggroundsandterritorialwatersrepatriation.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Fishing Grounds and Territorial Waters (Repatriation)</title>
+			<description>A Bill to make provision for the Government to designate certain fishing grounds and territorial waters as sovereign territory of the United Kingdom outside the control of the Common Fisheries Policy.</description>
+			<a10:updated>2013-06-25T10:51:08+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="2nd reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/prisonerscompletionofcustodialsentences.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/prisonerscompletionofcustodialsentences.html</link>
+			<category>Commons</category>
+			<category>Private Members' Bill (Presentation Bill)</category>
+			<title>Prisoners (Completion of Custodial Sentences)</title>
+			<description>A Bill to require prisoners to serve in prison the full custodial sentence handed down by the court.</description>
+			<a10:updated>2013-06-25T10:47:08+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="1st reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/immigrationact1971amendment.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/immigrationact1971amendment.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Immigration Act 1971 (Amendment)</title>
+			<description>A Bill to amend the Immigration Act 1971.</description>
+			<a10:updated>2013-06-11T09:42:13+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="1st reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/equalityact2010amendment.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/equalityact2010amendment.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Equality Act 2010 (Amendment)</title>
+			<description>A Bill to amend the Equality Act 2010 to improve access to public buildings; and to introduce six and twelve inch rules for step free access.</description>
+			<a10:updated>2013-05-21T10:44:55+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="1st reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/nationalhealthserviceamendeddutiesandpowers.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/nationalhealthserviceamendeddutiesandpowers.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>National Health Service (Amended Duties and Powers) </title>
+			<description>A Bill to re-establish the Secretary of State's legal duty as to the National Health Service in England, Quangos and related bodies</description>
+			<a10:updated>2013-05-17T10:08:57+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="1st reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/europeanunionwithdrawal.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/europeanunionwithdrawal.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>European Union (Withdrawal)</title>
+			<description>A Bill To Repeal the European Communities Act 1972; and to make provision for the Secretary of State to repeal any enactment that has been a consequence of the European Communities Act 1972.</description>
+			<a10:updated>2013-05-16T10:53:00+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="1st reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/assisteddying.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/assisteddying.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Assisted Dying</title>
+			<description>A Bill To enable competent adults who are terminally ill to be provided at their request with specified assistance to end their own life; and for connected purposes.</description>
+			<a10:updated>2013-05-16T10:49:44+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="1st reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/houseoflordsreform.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/houseoflordsreform.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>House of Lords Reform</title>
+			<description>A Bill Make provision for permanent leave of absence from the House of Lords; to provide for the expulsion of members of the House of Lords in specified circumstances; to make provision for the appointment of a Commission to make recommendations to the Crown for the creation of life peerages; and to restrict membership of the House of Lords by virtue of hereditary peerages.</description>
+			<a10:updated>2013-05-16T10:45:26+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="1st reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/socialcareportability.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/socialcareportability.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Social Care Portability</title>
+			<description>A Bill To provide for the portability of care packages to promote independent living for disabled persons by local authorities in England and Wales; and for connected purposes.</description>
+			<a10:updated>2013-05-16T10:41:57+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="1st reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/medicalinnovation.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/medicalinnovation.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Medical Innovation</title>
+			<description>A Bill to make provision about innovation in medical treatment.</description>
+			<a10:updated>2013-05-16T10:40:10+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="1st reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/arbitrationandmediationequalityservices.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/arbitrationandmediationequalityservices.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Arbitration and Mediation (Equality) Services</title>
+			<description>A Bill to make further provision about arbitration and mediation services and the application of equality legislation to such services, to make provision about the protection of victims of domestic abuse, and for connected purposes.</description>
+			<a10:updated>2013-05-15T11:31:41+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="1st reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/onlinesafety.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/onlinesafety.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Online Safety</title>
+			<description>A Bill to make provision about the promotion of online safety, to require internet service providers and mobile phone operators to provide a service that excludes adult content, to require electronic device manufacturers to provide a means of filtering content, and for parents to be educated about online safety.</description>
+			<a10:updated>2013-05-15T11:15:43+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="1st reading">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/firearmsamendment.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/firearmsamendment.html</link>
+			<category>Lords</category>
+			<category>Private Members' Bill (Starting in the House of Lords)</category>
+			<title>Firearms (Amendment)</title>
+			<description>A Bill to amend the Firearms Act 1968.</description>
+			<a10:updated>2013-05-14T10:43:37+01:00</a10:updated>
+		</item>
+		<item xmlns:p4="urn:services.parliament.uk-bills.ext" p4:stage="Committee stage">
+			<guid isPermaLink="true">http://services.parliament.uk/bills/2013-14/transportforlondonhl.html</guid>
+			<link>http://services.parliament.uk/bills/2013-14/transportforlondonhl.html</link>
+			<category>Lords</category>
+			<category>Private Bill</category>
+			<category>Railways</category>
+			<category>Buses</category>
+			<category>Regional planning and development</category>
+			<title>Transport for London</title>
+			<description>A Bill to confer further powers upon Transport for London; and for related purposes.</description>
+			<a10:updated>2013-05-10T16:33:38+01:00</a10:updated>
+		</item>
+	</channel>
+</rss>
