@@ -79,6 +79,7 @@ class Bill {
         
         return $this->infoPageHtml;
     }
+    
     /**
      * @return String The type of bill
      */
@@ -254,7 +255,10 @@ class Bill {
         $pdfUrl = $matches[0];
         $pdfUrl = str_replace('<span class="application-pdf"><a href="', '', $pdfUrl);
         $pdfUrl = preg_replace("/\"\>PDF version,(.*)\<\/a\>\<\/span\>/", '', $pdfUrl);
-        
+        // Forcably fix some incorrectly parsed URLs
+        $pdfUrl = preg_replace("/^.*http\:/", 'http:', $pdfUrl);
+        $pdfUrl = preg_replace("/\.pdf.*$/", '.pdf', $pdfUrl);
+                
         return $pdfUrl;
     }
     

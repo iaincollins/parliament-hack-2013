@@ -68,9 +68,8 @@ class Bills {
 
             // NB: Don't have examples for the value should be for the following two states
             /*
-                 * 10 = Consideration of amendments
-                 * 11 = Royal assent
-                 
+             * 10 = Consideration of amendments
+             * 11 = Royal assent                 
             */
             
             foreach ($billTypes as $billTypeId => $billType) {
@@ -84,8 +83,6 @@ class Bills {
             $bill->tags = $categories;
             array_push($bills, $bill);
         }
-        
-//        die(print_r($bills,1));
         
         return $bills;
     }

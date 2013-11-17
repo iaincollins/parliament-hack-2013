@@ -104,7 +104,7 @@
             ?>
                 <h4>
                     <?php if ($member->avatar): ?>
-                    <img class="avatar" width="36px;" height="42px" src="<?= $member->avatar ?>" />
+                    <img class="avatar" height="42px" src="<?= $member->avatar ?>" />
                     <?php endif; ?>
                     <a href="<?= $member->url ?>"><?= htmlspecialchars($member->name) ?></a>
                 </h4>

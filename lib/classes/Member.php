@@ -35,16 +35,18 @@ class Member {
         curl_close($ch);
         
         $response = json_decode($response);
-        
+
         $member = new self();
         $member->name = $name;
+        if ($simpleXml->Member['Dods_Id'])
+            $member->avatar = 'http://www.dodonline.co.uk/photos/'.$simpleXml->Member['Dods_Id'].'.jpg';
         if (isset($response->full_name))
             $member->name = $response->full_name;
         if (isset($response->url))
             $member->url = 'http://www.theyworkforyou.com'.$response->url;
         if (isset($response->party))
             $member->party = $response->party;
-        if (isset($response->image))
+        if (!$member->avatar && isset($response->image))
             $member->avatar = 'http://www.theyworkforyou.com'.$response->image;
             
         return $member;

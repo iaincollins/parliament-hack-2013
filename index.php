@@ -97,7 +97,7 @@
             ?>
                 <p>
                     <?php if ($member->avatar): ?>
-                    <img class="avatar" height="30px" src="<?= $member->avatar ?>" />
+                    <img class="avatar" height="48px" src="<?= $member->avatar ?>" />
                     <?php endif; ?>
                     <a style="margin-right: 10px;" href="<?= $member->url ?>"><?= htmlspecialchars($member->name) ?></a>
                     <span class="badge"><?= $numberOfBills ?></span>

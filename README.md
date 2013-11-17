@@ -67,5 +67,5 @@ http://data.parliament.uk/membersdataplatform/services/mnis/members/query/name*A
 NB: For lords the URL format for member pages is:
 http://www.publications.parliament.uk/pa/ld201314/ldhansrd/ldallfiles/peers/lord_hansard_5355_od.html
 
-Thanks to @stephen_abbot for explaining a bit about the API's and walking me
+Thanks to @stephen_abbott for explaining a bit about the API's and walking me
 through the significance of some of the values!
