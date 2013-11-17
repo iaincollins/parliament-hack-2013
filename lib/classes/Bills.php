@@ -5,7 +5,10 @@ class Bills {
     public static function getBills() {
     
         // @fixme Loading RSS feed from flat file for now
-        $rssFeed = simplexml_load_file(dirname(__FILE__).'/../bills.xml');
+        $rssFeedXml = file_get_contents(dirname(__FILE__).'/../bills.xml');
+        $rssFeedXml = str_replace('p4:stage', 'stage', $rssFeedXml);
+
+        $rssFeed = simplexml_load_string($rssFeedXml);
 
         $billTypes = array("Government Bill",
                            "Private Members' Bill (Ballot Bill)",
@@ -18,6 +21,8 @@ class Bills {
              
         $bills = array();
         foreach ($rssFeed->channel->item as $item) {
+        
+            ;
             $bill = new Bill();
             $bill->id = sha1($item->guid);
             $bill->url = trim($item->link);
@@ -29,11 +34,31 @@ class Bills {
             foreach ($item->category as $category) {
                 array_push($categories, $category);
             }
-            
+
             if (in_array('Commons', $categories)) {
+                if ($item['stage'] == "1st reading")
+                    $bill->stage = 0;
+                if ($item['stage'] == "2nd reading")
+                    $bill->stage = 1;
+                if ($item['stage'] == "Committee stage")
+                    $bill->stage = 2;
+                if ($item['stage'] == "Review stage")
+                    $bill->stage = 3;
+                if ($item['stage'] == "3rd reading")
+                    $bill->stage = 4;
                 if (($key = array_search('Commons', $categories)) !== false)
                     unset($categories[$key]);
             } else if (in_array('Lords', $categories)) {
+                if ($item['stage'] == "1st reading")
+                    $bill->stage = 5;
+                if ($item['stage'] == "2nd reading")
+                    $bill->stage = 6;
+                if ($item['stage'] == "Committee stage")
+                    $bill->stage = 7;
+                if ($item['stage'] == "Review stage")
+                    $bill->stage = 8;
+                if ($item['stage'] == "3rd reading")
+                    $bill->stage = 9;
                 if (($key = array_search('Lords', $categories)) !== false)
                     unset($categories[$key]);
             } else if (in_array('Not assigned', $categories)) {
@@ -41,6 +66,13 @@ class Bills {
                     unset($categories[$key]);
             }
 
+            // NB: Don't have examples for the value should be for the following two states
+            /*
+                 * 10 = Consideration of amendments
+                 * 11 = Royal assent
+                 
+            */
+            
             foreach ($billTypes as $billTypeId => $billType) {
                 if (in_array($billType, $categories)) {
                     $bill->type = $billTypeId;

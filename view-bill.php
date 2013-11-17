@@ -39,11 +39,10 @@
                     </ul>
                 </div>
             </div>            
-            <h4 class="pull-left">The current draft of the bill in full</h4>
-            <?php if ($bill->getBillTextUrl() == false): ?>
-                <p class="text-danger">The text for this bill is not yet available.</p>
-                <div class="clearfix"></div>
+            <?php if ($bill->getBillText() == false): ?>
+                <h4 class="text-danger text-center">The text for this bill is not yet available.</h4>
             <?php else: ?>
+                <h4 class="pull-left">The current draft of the bill in full</h4>
                 <p class="pull-right" style="padding-top: 10px;">
                     <a href="<?= $bill->getPdfUrl() ?>"><i class="fa fa-file"></i> View as PDF</a>
                 </p>
@@ -73,45 +72,54 @@
         </div>
         <div class="col-md-3">
             <p>
-                Private members bill
+                <strong><?= $bill->getBillType() ?></strong>
             </p>
             <p>
                 Sponsored by
             </p>
-            <?php foreach ($bill->getMembers() as $member): ?>
-                <h4><a href="/mp/">MP's name</a></h4>
+            <?php foreach ($bill->getMembers() as $memberName): ?>
+                <h4><a href="#"><?= $memberName ?></a></h4>
             <?php endforeach; ?>
             <hr/>
+            <!--
             <strong>Next stage</strong>
             <p>
                 Second reading in the House of Commons on Tuesday 17th January, 2014.
             </p>
             <hr/>
+            -->
             <h3>Progress</h3>
-            <h4>House of Commons</h3>
-            <ol class="list-unstyled">
-                <li><i class="fa fa-arrow-right invisible"></i> First reading</li>
-                <li><i class="fa fa-arrow-right invisible"></i> Second reading</li>
-                <li><i class="fa fa-arrow-right"></i> Committee stage
-                </li>
-                <li class="text-muted"><i class="fa fa-arrow-right invisible"></i> Report stage</li>
-                <li class="text-muted"><i class="fa fa-arrow-right invisible"></i> Third reading</li>
-            </ol>
-            <h4>House of Lords</h3>
-            <ol class="list-unstyled">
-                <li class="text-muted"><i class="fa fa-arrow-right invisible"></i> First reading</li>
-                <li class="text-muted"><i class="fa fa-arrow-right invisible"></i> Second reading</li>
-                <li class="text-muted"><i class="fa fa-arrow-right invisible"></i> Committee stage</li>
-                <li class="text-muted"><i class="fa fa-arrow-right invisible"></i> Report stage</li>
-                <li class="text-muted"><i class="fa fa-arrow-right invisible"></i> Third reading</li>
-            </ol>
-            <h4>Final stages</h4>
-            <ol class="list-unstyled">
-                <li class="text-muted"><i class="fa fa-arrow-right invisible"></i> Amendments</li>
-                <li class="text-muted"><i class="fa fa-arrow-right invisible"></i> Royal assent</li>
-            </ol>
-            <hr/>
-            <h4>Related documents</h4>
+            <?php 
+            
+                $phases = array('House of Commons' => array('First reading', 'Second reading', 'Committee stage', 'Report stage', 'Third reading'),
+                                'House of Lords' => array('First reading', 'Second reading', 'Committee stage', 'Report stage', 'Third reading'),   
+                                'Final stages' => array('Amendments', 'Royal assent')
+                                );
+                
+                $liClass = '';
+                $iconClass = 'fa-check';
+                $i = 0;
+                foreach ($phases as $phase => $stages) {
+                    echo '<h4>'.$phase.'</h4>';
+                    echo '<ol class="list-unstyled">';
+                    foreach ($stages as $stage) {
+                        echo '<li class="'.$liClass.'">';
+                        if ($i == $bill->stage) {
+                            echo '<i class="fa fa-arrow-right"></i> ';
+                            $liClass = "text-muted";
+                            $iconClass .= ' invisible';
+                        } else {
+                            echo '<i class="fa '.$iconClass.'"></i> ';
+                        }
+                        echo $stage;
+                        echo '</li>';
+                        $i++;
+                    }
+                    echo ' </ol>';
+                }
+            ?>
+
+<!--             <h4>Related documents</h4> -->
         </div>
     </div><!-- /.container -->
 <?php include('include/footer.php'); ?>

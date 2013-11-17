@@ -57,40 +57,86 @@ class Bill {
      * @var String[int] A list of categories the bill has been tagged with (e.g. "Railways", "Buses")
      */
     public $tags = array();
+    
+    /**
+     * @var String  The HTML for the page for this bill on the parliament website (for scraping)
+     */
+    private $infoPageHtml;
 
+    public function getInfoPageHtml() {
+        if ($this->infoPageHtml != null)
+            return $this->infoPageHtml;
+
+        $ch = curl_init();
+        $timeout = 10;
+        curl_setopt($ch, CURLOPT_URL, $this->url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+        $response = curl_exec($ch);
+        curl_close($ch);
+        
+        $this->infoPageHtml = $response;
+        
+        return $this->infoPageHtml;
+    }
+    /**
+     * @return String The type of bill
+     */
+    public function getBillType() {
+        $infoPageHtml = $this->getInfoPageHtml();
+        try {
+            $matches = array();
+            preg_match("/\<dl class=\"bill-agents\"\>(.*)\<\/dl\>/s", $infoPageHtml, $matches);
+            
+            $simpleXml = @simplexml_load_string($matches[0]);
+
+            if (!$simpleXml)
+                return "";
+            
+            $i = 0;
+            foreach ($simpleXml->xpath('//dd') as $billType) {
+                // It's always the first entry
+                return $billType;
+            }
+        } catch (\Exception $ex) { }
+        return false;
+    }
+    
     /**
      * @return String[int] Returns a list of the members that sponsored this bill
      */
     public function getMembers() {
-        $ch = curl_init();
-        $timeout = 10;
-        curl_setopt($ch, CURLOPT_URL, $this->url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
-        $response = curl_exec($ch);
-        curl_close($ch);
+        $infoPageHtml = $this->getInfoPageHtml();
+
+        $memberNames = array();
         
-        $members = array();
+        // Get member names
+        try {
+            $matches = array();
+            preg_match("/\<dl class=\"bill-agents\"\>(.*)\<\/dl\>/s", $infoPageHtml, $matches);
+            $simpleXml = @simplexml_load_string($matches[0]);
+            
+            if (!$simpleXml)
+                return $memberNames;
+
+            $i = 0;
+            foreach ($simpleXml->xpath('//dd') as $memberName) {
+                // Ignore first entry
+                if ($i != 0)
+                    array_push($memberNames, $memberName);
+                $i++;
+            }
+        } catch (\Exception $ex) { }
         
-        $matches = array();
-        preg_match("/\<dl class=\"bill-agents\"\>(.*)\<\/dl\>/s", $response, $matches);
-        //die(print_r($matches,1));
-        
-        return $members;
+        return $memberNames;
     }
     
     public function getBillTextUrl() {
-        $ch = curl_init();
-        $timeout = 10;
-        curl_setopt($ch, CURLOPT_URL, $this->url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
-        $response = curl_exec($ch);
-        curl_close($ch);
+        $infoPageHtml = $this->getInfoPageHtml();
 
         // If you accidentally look at this, I suggest pretending you haven't seen it.
         $matches = array();
-        preg_match("/\<td class=\"bill-item-description\"\>\<a href=\".*\"/", $response, $matches);
+        preg_match("/\<td class=\"bill-item-description\"\>\<a href=\".*\"/", $infoPageHtml, $matches);
         
         // If no URL that means there is no bill text to download yet (boo)
         if (!isset($matches[0]))
@@ -136,6 +182,9 @@ class Bill {
         // Get all the HTML pages for the bill from the page control
         $matches = array();
         preg_match("/\<p class=\"LegNavTextBottom\"\>.*\<\/p\>/", $response, $matches);
+        
+        if (!isset($matches[0]))
+            return false;
 
         $billPages = array();        
         $regexp = "<a\s[^>]*href=(\"??)([^\" >]*?)\\1[^>]*>(.*)<\/a>";
