@@ -63,7 +63,7 @@
                 <div class="clearfix"></div>
                 <div class="panel panel-default" style="height: 500px; overflow: hidden; border-width: 4px;">
                     <div class="panel-heading">
-                        <strong class="pull-left">The current draft of the bill as of <i class="fa fa-calendar"></i> <?= date('jS F, Y'); ?></strong>
+                        <strong class="pull-left">The current draft of the bill as of <i class="fa fa-calendar"></i> <?= date('l jS F, Y'); ?></strong>
                         <div class="pull-right">
                             <a href="<?= $bill->getPdfUrl() ?>"><i class="fa fa-file"></i> View as PDF</a>
                             | <a href="<?= $bill->url ?>"><i class="fa fa-globe"></i> parliament.uk</a>
@@ -153,7 +153,12 @@
                     ?>
                 </div>
             </div>
-<!--             <h4>Related documents</h4> -->
+            <?php foreach ($bill->getEvents() as $event): ?>
+                <p> 
+                    <i class="fa fa-calendar"></i> <?= date('l jS F, Y', strtotime($event->date)); ?><br/>
+                    <a href="<?= htmlentities($event->url) ?>"><?= htmlentities($event->name) ?></a>
+                </p>
+            <?php endforeach; ?>
         </div>
     </div><!-- /.container -->
     <script>

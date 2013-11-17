@@ -2,6 +2,9 @@
 
 class Member {
 
+    // This is only being used for the hack day. Please don't steal it or I'll be sad :(
+    const APIKEY = 'GfmMVnCm29fQEqvFS7CgLHLJ';
+    
     public $name;
     public $url;
     public $party;
@@ -23,12 +26,9 @@ class Member {
 
         $constituency = $simpleXml->Member->MemberFrom;
 
-        // This is only being published for the hack day. Please don't steal it or I'll be sad :(
-        $apiKey = 'GfmMVnCm29fQEqvFS7CgLHLJ';
-        
         $ch = curl_init();
         $timeout = 10;
-        curl_setopt($ch, CURLOPT_URL, 'http://www.theyworkforyou.com/api/getMP?constituency='.urlencode(trim($constituency)).'&key='.$apiKey.'&output=json_decode()');
+        curl_setopt($ch, CURLOPT_URL, 'http://www.theyworkforyou.com/api/getMP?constituency='.urlencode(trim($constituency)).'&key='.self::APIKEY.'&output=json_decode()');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
         $response = curl_exec($ch);

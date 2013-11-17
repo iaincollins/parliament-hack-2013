@@ -2,6 +2,9 @@
 
 class Bill {
 
+    // This is only being used for the hack day. Please don't steal it or I'll be sad :(
+    const APIKEY = 'GfmMVnCm29fQEqvFS7CgLHLJ';
+
     /**
      * @var String  GUID based on URL (that doesn't changes and intended to be used as a GUID)
      */
@@ -131,6 +134,44 @@ class Bill {
         
         return $memberNames;
     }
+
+    public function getEvents($limit = 5) {
+        $ch = curl_init();
+        $timeout = 10;
+        curl_setopt($ch, CURLOPT_URL, 'http://www.theyworkforyou.com/api/getHansard?key='.self::APIKEY.'&search='.urlencode(trim($this->title)).'&output=js');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+        $response = curl_exec($ch);
+        curl_close($ch);
+
+        $response = json_decode($response);
+
+        $i = 0;
+        $events = array();
+        if (!isset($response->rows))
+            return $events;
+            
+        foreach ($response->rows as $result) {
+
+            if (!isset($result->title) || !isset($result->event_date) || !isset($result->link_external))
+                continue;
+                
+            $event = new stdClass();
+            $event->name = $result->title;
+            $event->date = $result->event_date; 
+            $event->url = $result->link_external;
+            $events[strtotime($result->event_date)] = $event;
+            $i++;
+            if ($i > $limit)
+                break;
+        }
+        
+        ksort($events);
+        
+        return $events;
+    }
+    
+   
     
     public function getBillTextUrl() {
         $infoPageHtml = $this->getInfoPageHtml();
