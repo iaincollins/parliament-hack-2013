@@ -6,14 +6,17 @@
         <div class="col-md-9">
             <div class="media">
                 <div class="media-object pull-left" style="padding-top: 30px;">
-                    <p>
-                        <span class="text-success">0 for</span>
-                    </p>
-                    <p>
-                        <span class="text-danger">0 against</span>
-                    <p>
-                    <div class="btn btn-sm btn-success"><i class="fa fa-chevron-up"></i></div>
-                    <div class="btn btn-sm btn-danger"><i class="fa fa-chevron-down"></i></div>
+                    <div style="height: 75px; width: 75px;">
+                        <div style="position: relative; left: -35px; top: -45px; height: 100px; width: 100px;" id="votes"></div>
+                        <ul data-pie-id="votes" class="votes hidden">
+                            <li data-value="80">For</li>
+                            <li data-value="20">Against</li>
+                        </ul>
+                    </div>
+                    <div class="vote-buttons">
+                        <div class="btn btn-sm btn-default"><i class="fa fa-chevron-up"></i></div>
+                        <div class="btn btn-sm btn-default"><i class="fa fa-chevron-down"></i></div>
+                    </div>
                 </div>
                 <div class="media-body">
                     <h1><?= htmlspecialchars($bill->title) ?></h1>
@@ -89,8 +92,7 @@
             <hr/>
             -->
             <h3>Progress</h3>
-            <?php 
-            
+            <?php
                 $phases = array('House of Commons' => array('First reading', 'Second reading', 'Committee stage', 'Report stage', 'Third reading'),
                                 'House of Lords' => array('First reading', 'Second reading', 'Committee stage', 'Report stage', 'Third reading'),   
                                 'Final stages' => array('Amendments', 'Royal assent')
@@ -122,4 +124,12 @@
 <!--             <h4>Related documents</h4> -->
         </div>
     </div><!-- /.container -->
+    <script>
+        $(function() {
+            Pizza.init(document.body, {
+                "show_percent": false,
+                "donut": true
+            });
+        });
+    </script>
 <?php include('include/footer.php'); ?>

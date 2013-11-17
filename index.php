@@ -25,14 +25,17 @@
                  ?>
                 <div class="media">
                     <div class="media-object pull-left" style="padding-top: 10px;">
-                        <p>
-                            <span class="text-success">0 for</span>
-                        </p>
-                        <p>
-                            <span class="text-danger">0 against</span>
-                        <p>
-                        <div class="btn btn-sm btn-success"><i class="fa fa-chevron-up"></i></div>
-                        <div class="btn btn-sm btn-danger"><i class="fa fa-chevron-down"></i></div>
+                        <div style="height: 65px; width: 75px;">
+                            <div style="position: relative; left: -32px; top: -45px; height: 90px; width: 90px;" id="votes-<?= $bill->id ?>"></div>
+                            <ul data-pie-id="votes-<?= $bill->id ?>" class="votes hidden">
+                                <li data-value="80">For</li>
+                                <li data-value="20">Against</li>
+                            </ul>
+                        </div>
+                        <div class="vote-buttons">
+                            <div class="btn btn-sm btn-default"><i class="fa fa-chevron-up"></i></div>
+                            <div class="btn btn-sm btn-default"><i class="fa fa-chevron-down"></i></div>
+                        </div>
                     </div>
                     <div class="media-body">
                         <h3 style="margin-top: 0;"><a href="/view-bill/?id=<?= $bill->id ?>" style="text-decoration: none;"><?= htmlspecialchars($bill->title) ?></a></h3>
@@ -63,4 +66,12 @@
             <div>
         </div>
     </div><!-- /.container -->
+    <script>
+        $(function() {
+            Pizza.init(document.body, {
+                "show_percent": false,
+                "donut": true
+            });
+        });
+    </script>
 <?php include('include/footer.php'); ?>

@@ -19,3 +19,19 @@
     font-weight: normal !important;
     font-style: normal !important;
 }
+
+ul.votes li:nth-child(1) {
+    color: #3fb618 !important;
+}
+
+ul.votes li:nth-child(2) {
+    color: #ff0039 !important;
+}
+
+.vote-buttons .btn {
+    border-radius: 4px;
+}
+
+.vote-buttons .btn.btn-default {
+    background: #666;
+}
