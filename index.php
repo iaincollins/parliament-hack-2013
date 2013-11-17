@@ -55,7 +55,7 @@
                         </div>
                     </div>
                     <div class="media-body">
-                        <h3 style="margin-top: 0;"><a href="/view-bill/?id=<?= $bill->id ?>" style="text-decoration: none;"><?= htmlspecialchars($bill->title) ?> Bill</a></h3>
+                        <h3 style="margin-top: 0;"><a href="/view-bill/<?= $bill->id ?>" style="text-decoration: none;"><?= htmlspecialchars($bill->title) ?> Bill</a></h3>
                         <?php  
                             foreach ($bill->getMembers() as $memberName):
                                 $member = Member::getMemberByName($memberName);

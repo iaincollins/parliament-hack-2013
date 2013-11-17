@@ -1,6 +1,7 @@
 <?php
     include('include/header.php'); 
-    $bill = Bill::getBillById($_REQUEST['id']);
+    $billId = str_replace('/view-bill/', '', $_SERVER['REQUEST_URI']);
+    $bill = Bill::getBillById($billId);
 ?>
     <div class="container">
         <div class="col-md-9">
