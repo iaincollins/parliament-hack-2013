@@ -7,9 +7,15 @@ http://rewiredstate.org/hacks/uk-parliament-hack-2013
 Documentation for relevant APIs can be found here:
 https://s3.amazonaws.com/ParliamentHack2013/Parliament+Hack+2013.htm
 
-ABOUT THIS HACK
+UPDATE:
 
-Saturday 11th, 10:45:
+Tuesday 19th November:
+
+I won in the "Why should I care?" category over the weekend, which was 
+lovely! I'm going to be spending time trying to turn this into a non
+hacky implementation over the next week.
+
+ABOUT THIS HACK
 
 While on the tube the way to the pre-hack drinks last night, I wrote down a
 few ideas on my iPhone.

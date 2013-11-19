@@ -6,37 +6,52 @@
         <div class="row">
             <div class="col-md-9">
                 <h1>
-                    <span class="fa-stack fa-lg pull-left" style="margin-right: 20px;">
-                      <i class="fa fa-sun-o fa-stack-2x"></i>
-                      <i class="fa fa-bullhorn fa-stack-1x"></i>
-                    </span>
-                    <span class="pull-left">
-                        Review &amp; comment on new legislation
-                        <br/>
-                        <small>Public feedback on draft bills</small>
-                    </span>
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-2">
+                            <span class="fa-stack fa-lg pull-right">
+                              <i class="fa fa-sun-o fa-stack-2x"></i>
+                              <i class="fa fa-bullhorn fa-stack-1x"></i>
+                            </span>
+                        </div>
+                        <div class="col-xs-8 col-sm-10" style="padding-top: 10px;">
+                            Public review of new legislation
+                            <br/>
+                            <small>Review and comment on new bills</small>
+                        </div>
+                    </div>
                 </h1>
                 <div class="clearfix"></div>
-                <br/>
+                
+                <div class="row">
+                    <div class="col-sm-2">
+                        &nbsp;
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="alert alert-info">
+                            <p><i class="fa fa-info-circle"></i> This site was originally created during Parliament Hack 2013. 
+                            <a href="https://twitter.com/search?q=%23rsparly2013">#RSPARLY2013</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#">Bills before Parliament</a></li>
+                </ul>
+                
                 <?php
                     $j = 0;
-                    foreach (Bills::getBills() as $bill):
+                    foreach (Bills::getAllBillsBeforeParliament() as $bill):
                         $j++;
                         if ($j > 20)
                             break;
                             
-                        $sponsors = $bill->getMembers();
-
                         // Ignore early bills with no details yet (or somehow broken because of the crummy parsing)
-                        if (count($sponsors) == 0)
+                        if (count($bill->getMembers()) == 0)
                             continue;
-                        
-                        // Ingoring bills that only have a title and no actual text uploaded yet
-                        //if ($bill->getBillTextUrl() == false)
-                        //    continue;
                  ?>
                 <div class="media">
                     <div class="media-object pull-left" style="padding-top: 10px;">
+                        <!--
                         <div style="height: 65px; width: 75px;">
                             <div style="position: relative; left: -32px; top: -45px; height: 90px; width: 90px;" id="votes-<?= $bill->id ?>"></div>
                             <ul data-pie-id="votes-<?= $bill->id ?>" class="votes hidden">
@@ -53,13 +68,12 @@
                             <div class="btn btn-sm btn-default"><i class="fa fa-chevron-up"></i></div>
                             <div class="btn btn-sm btn-default"><i class="fa fa-chevron-down"></i></div>
                         </div>
+                        -->
                     </div>
                     <div class="media-body">
                         <h3 style="margin-top: 0;"><a href="/view-bill/<?= $bill->id ?>" style="text-decoration: none;"><?= htmlspecialchars($bill->title) ?> Bill</a></h3>
                         <?php  
-                            foreach ($bill->getMembers() as $memberName):
-                                $member = Member::getMemberByName($memberName);
-                                
+                            foreach ($bill->getMembers() as $member):                                
                                 if (!isset($members[sha1($member->name)])) {
                                     $members[sha1($member->name)] = array();
                                     $members[sha1($member->name)]['member'] = $member;

@@ -1,40 +1,57 @@
 <?php
 
 class Bills {
+
+    const ALL_BILLS_BEFORE_PARLIAMENT_RSS_FEED = 'http://services.parliament.uk/bills/AllBills.rss';
+    const ALL_BILLS_BEFORE_PARLIAMENT_CACHE = '/tmp/bills.cache';
     
-    public static function getBills() {
+    public static function getAllBillsBeforeParliament() {    
+        // If cache doesn't exist or is older than 12 hours then update it
+        if (!file_exists(self::ALL_BILLS_BEFORE_PARLIAMENT_CACHE) ||
+             strtotime('+12 hours', filemtime(self::ALL_BILLS_BEFORE_PARLIAMENT_CACHE)) < time()) {
+            $bills = self::getAllBillsBeforeParliamentFromRSSFeed();
+            file_put_contents(self::ALL_BILLS_BEFORE_PARLIAMENT_CACHE, serialize($bills));
+            return $bills;
+        } else {
+            return unserialize(file_get_contents(self::ALL_BILLS_BEFORE_PARLIAMENT_CACHE));
+        }                    
+    }
+    
+    public static function getAllBillsBeforeParliamentFromRSSFeed() {
     
         // @fixme Loading RSS feed from flat file for now
-        $rssFeedXml = file_get_contents(dirname(__FILE__).'/../bills.xml');
+        $rssFeedXml = file_get_contents(self::ALL_BILLS_BEFORE_PARLIAMENT_RSS_FEED);
+
+        //$rssFeedXml = file_get_contents(dirname(__FILE__).'/../bills.xml');
+        
+        // Hackily change the 'stage' attribute name so we can easily parse it with SimpleXml
         $rssFeedXml = str_replace('p4:stage', 'stage', $rssFeedXml);
 
         $rssFeed = simplexml_load_string($rssFeedXml);
 
-        $billTypes = array("Government Bill",
-                           "Private Members' Bill (Ballot Bill)",
-                           "Private Members' Bill (Presentation Bill)",
-                           "Private Members' Bill (under the Ten Minute Rule, SO No 23)",
-                           "Private Members' Bill (Starting in the House of Lords)",
-                           "Private Members' Bill (Starting in the House of Lords)",
-                           "Private Bill"
-                            );
-             
+        $billTypes = \Bill\Type::getAllBillTypes();
         $bills = array();
         foreach ($rssFeed->channel->item as $item) {
-        
-            ;
+
             $bill = new Bill();
             $bill->id = sha1($item->guid);
             $bill->url = trim($item->link);
             $bill->title = trim($item->title);
             $bill->description = trim($item->description);
-            $bill->description = preg_replace("/;.*/s", ".", $bill->description);
+            
+            // Trigger pre-emptive fetching of members assoicated with the bill (so it's cached)
+            $bill->getMembers();
+
+            // Trigger pre-emptive fetching of events assoicated with the bill (so it's cached)
+            $bill->getEvents();
             
             $categories = array();
             foreach ($item->category as $category) {
-                array_push($categories, $category);
+                array_push($categories, (string) $category);
             }
 
+            // To determine the stage of the bill we have to check both all
+            // <category> elements and the 'stage' attribute (not ideal).
             if (in_array('Commons', $categories)) {
                 if ($item['stage'] == "1st reading")
                     $bill->stage = 0;
@@ -66,22 +83,30 @@ class Bills {
                     unset($categories[$key]);
             }
 
-            // NB: Don't have examples for the value should be for the following two states
-            /*
-             * 10 = Consideration of amendments
-             * 11 = Royal assent                 
-            */
+            // @fixme I need examples of the stage value for the following two states:
+            // 10 = Consideration of amendments
+            // 11 = Royal assent
             
-            foreach ($billTypes as $billTypeId => $billType) {
-                if (in_array($billType, $categories)) {
-                    $bill->type = $billTypeId;
-                    if (($key = array_search($billType, $categories)) !== false)
+            // Get the type of bill.
+            foreach ($billTypes as $billType) {
+                if (in_array($billType->rssFeedValue, $categories)) {
+                    $bill->type = $billType;
+                    
+                    if (($key = array_search($billType->rssFeedValue, $categories)) !== false)
                         unset($categories[$key]);
                 }
             }
             
-            $bill->tags = $categories;
+            // Add the (friendly name) version of this type of bill as a tag
+            array_push($bill->tags, $bill->type->name);
+            
+            // Any renaming "Category" labels get converted into tags.
+            foreach ($categories as $category) {                    
+                array_push($bill->tags, $category);
+            }
+            
             array_push($bills, $bill);
+            
         }
         
         return $bills;

@@ -3,25 +3,30 @@
 class Bill {
 
     // This is only being used for the hack day. Please don't steal it or I'll be sad :(
-    const APIKEY = 'GfmMVnCm29fQEqvFS7CgLHLJ';
+    const THEYWORKFORYOU_API_KEY = 'GfmMVnCm29fQEqvFS7CgLHLJ';
 
     /**
-     * @var String  GUID based on URL (that doesn't changes and intended to be used as a GUID)
+     * @var string  GUID based on URL (that doesn't changes and intended to be used as a GUID)
      */
     public $id;
 
     /**
-     * @var String  The link to the bill on services.parliament.uk
+     * @var string  The link to the bill on services.parliament.uk
      */
     public $url;
 
     /**
-     * @var String  The name of the bill
+     * @var string  The name of the bill
      */
     public $title;
+    
+    /**
+     * @var \Member[int]    Members who are sponsoring this bill.
+     */
+    public $members = array();
 
     /**
-     * @var String  A description of the bill (typically 500-1000 words)
+     * @var string  A description of the bill (typically 500-1000 words)
      */
     public $description;
 
@@ -44,25 +49,22 @@ class Bill {
     public $stage;
 
     /**
-     * @var Int     The type of bill (e.g. Government, Private members)
-     *
-     *
-     * 0 = Government Bill
-     * 1 = Private Members' Bill (Ballot Bill)
-     * 2 = Private Members' Bill (Presentation Bill)
-     * 3 = Private Members' Bill (under the Ten Minute Rule, SO No 23)
-     * 4 = Private Members' Bill (Starting in the House of Lords)
-     * 5 = Private Bill
+     * @var \Bill\Type     The type of bill (e.g. Government Bill, Private Members' Bill)
      */
     public $type;
+    
+    /**
+     * @var \Events[int]    Events (such as debates) scheduled which relate to this bill.
+     */
+    public $events;
 
     /**
-     * @var String[int] A list of categories the bill has been tagged with (e.g. "Railways", "Buses")
+     * @var string[int] A list of categories the bill has been tagged with (e.g. "Railways", "Buses")
      */
     public $tags = array();
     
     /**
-     * @var String  The HTML for the page for this bill on the parliament website (for scraping)
+     * @var string  The HTML for the page for this bill on the parliament website (for scraping)
      */
     private $infoPageHtml;
 
@@ -84,7 +86,7 @@ class Bill {
     }
     
     /**
-     * @return String The type of bill
+     * @return string The type of bill
      */
     public function getBillType() {
         $infoPageHtml = $this->getInfoPageHtml();
@@ -107,13 +109,16 @@ class Bill {
     }
     
     /**
-     * @return String[int] Returns a list of the members that sponsored this bill
+     * @return string[int] Returns a list of the members that sponsored this bill
      */
     public function getMembers() {
+
+        if (count($this->members) > 0)
+            return $this->members;
+
         $infoPageHtml = $this->getInfoPageHtml();
 
         $memberNames = array();
-        
         // Get member names
         try {
             $matches = array();
@@ -127,18 +132,28 @@ class Bill {
             foreach ($simpleXml->xpath('//dd') as $memberName) {
                 // Ignore first entry
                 if ($i != 0)
-                    array_push($memberNames, $memberName);
+                    array_push($memberNames, (string) $memberName);
                 $i++;
             }
         } catch (\Exception $ex) { }
         
-        return $memberNames;
+        foreach ($memberNames as $memberName) {
+            array_push($this->members, \Member::getMemberByName($memberName));
+        }
+        
+        return $this->members;
     }
 
-    public function getEvents($limit = 5) {
+    public function getEvents($limit = 20) {
+    
+        if (is_array($this->events))
+            return $this->events;
+        
+        $this->events = array();
+        
         $ch = curl_init();
         $timeout = 10;
-        curl_setopt($ch, CURLOPT_URL, 'http://www.theyworkforyou.com/api/getHansard?key='.self::APIKEY.'&search='.urlencode(trim($this->title)).'&output=js');
+        curl_setopt($ch, CURLOPT_URL, 'http://www.theyworkforyou.com/api/getHansard?key='.self::THEYWORKFORYOU_API_KEY.'&search='.urlencode(trim($this->title)).'&output=js');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
         $response = curl_exec($ch);
@@ -153,10 +168,11 @@ class Bill {
             
         foreach ($response->rows as $result) {
 
+            // Ignore malformed results
             if (!isset($result->title) || !isset($result->event_date) || !isset($result->link_external))
                 continue;
                 
-            $event = new stdClass();
+            $event = new Event();
             $event->name = $result->title;
             $event->date = $result->event_date; 
             $event->url = $result->link_external;
@@ -168,7 +184,9 @@ class Bill {
         
         ksort($events);
         
-        return $events;
+        $this->events = $events;
+        
+        return $this->events;
     }
     
    
@@ -198,7 +216,7 @@ class Bill {
      * more regexes on HTML and then stitches them together.
      *
      * OH GOD I'M PARSING HTML WITH REGEX.
-     * This function is © Tony The Pony.
+     * @fixme Remove this before Tony The Pony comes for me.
      */
     public function getBillText() {
     
@@ -247,7 +265,8 @@ class Bill {
 
     /**
      * Get the HTML body for a page of a bill, without header of footer.
-     * Super janky.
+     * Super janky. Suspect it eats some text.
+     * @fixme Parse the page properly.
      */
     public function getBillPageHtml($url) {
         $ch = curl_init();
@@ -274,7 +293,7 @@ class Bill {
     }
     
     /**
-     * Get the URL for the PDF of the latest version of the page by scraping it.
+     * Get the URL for the PDF of the latest version of the page by screen scraping.
      */
     public function getPdfUrl() {
         $ch = curl_init();
@@ -303,38 +322,9 @@ class Bill {
         return $pdfUrl;
     }
     
-    /**
-     * Lookups the text of the current version of this bill from the PDF
-     * Not really useable as badly formatted (useful for making it searchable maybe).
-     */
-    public function getBillTextFromPdf() {
-
-        // Fail if PDF not available.
-        $pdfUrl = $this->getPdfUrl();
-        if ($pdfUrl == false)
-            return false;
-        
-        // Now, get the PDF
-        $ch = curl_init();
-        $timeout = 10;
-        curl_setopt($ch, CURLOPT_URL, $pdfUrl);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
-        $response = curl_exec($ch);
-        curl_close($ch);
-
-        // Oh yeah lets just load the the entire PDF into RAM.
-        // THAT WILL TOTALLY WORK AND CAN'T POSSIBLY GO WRONG.
-        // @fixme WAT
-        $pdf2text = new PDF2Text();
-        $pdf2text->decodePDF($response);
-        $text = $pdf2text->output();
-        return $text;
-    }
-    
     public static function getBillById($id) {
         // @fixme Infinate monkey indexing.
-        foreach (Bills::getBills() as $bill) {
+        foreach (Bills::getAllBillsBeforeParliament() as $bill) {
             if ($id == $bill->id)
                 return $bill;
         }

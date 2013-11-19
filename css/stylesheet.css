@@ -23,12 +23,17 @@
 .navbar {
     border-radius: 0 !important;
 }
+
 ul.votes li:nth-child(1) {
     color: #0fae76 !important;
 }
 
 ul.votes li:nth-child(2) {
     color: #ca2335 !important;
+}
+
+.avatar {
+    margin-right: 5px;
 }
 
 .avatar,

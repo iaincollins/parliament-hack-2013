@@ -7,6 +7,7 @@
         <div class="col-md-9">
             <div class="media">
                 <div class="media-object pull-left" style="padding-top: 30px;">
+                    <!--
                     <div style="height: 75px; width: 75px;">
                         <div style="position: relative; left: -36px; top: -40px; height: 96px; width: 96px;" id="votes"></div>
                         <ul data-pie-id="votes" class="votes hidden">
@@ -23,13 +24,20 @@
                         <div class="btn btn-sm btn-default"><i class="fa fa-chevron-up"></i></div>
                         <div class="btn btn-sm btn-default"><i class="fa fa-chevron-down"></i></div>
                     </div>
+                    -->
                 </div>
                 <div class="media-body">
                     <h2><?= htmlspecialchars($bill->title) ?> Bill</h2>
+                    <p>
+                        <span class="label label-info"><?= $bill->type->name ?></span>
+                    </p>
                     <p class="lead">
-                        <?php
-                            foreach (explode("\n", $bill->description) as $description) {
-                                echo htmlspecialchars($description);
+                        <?php       
+                            $description = $bill->description;
+                            $description = preg_replace("/to make provision/i", "", $description);                            
+                            $description = ucfirst(trim($description));
+                            foreach (explode(";", $description) as $line) {
+                                echo htmlspecialchars($line).'.';
                                 break;
                             }
                         ?>
@@ -37,31 +45,32 @@
                     <ul class="list-unstyled">
                         <?php
                             $i = 0;
-                            foreach (explode("\n", $bill->description) as $description) {
+                            foreach (explode(";", $description) as $line) {
+                                $line = ucfirst(trim($line));
+                                $line = preg_replace("/\.$/i", "", $line);                            
+                                $line .= '.';
                                 $i++;
                                 if ($i == 1)
-                                    continue;
-                                    
-                                echo '<li><i class="fa fa-chevron-right"></i> '.htmlspecialchars($description).'</li>';
+                                    continue;                                    
+                                echo '<li><i class="fa fa-chevron-right"></i> '.htmlspecialchars($line).'</li>';
                             }
                         ?>
                     </ul>
-
+                    <br/>
                     <p>
                         <span class="st_facebook" displayText="Facebook"></span>
                         <span class="st_twitter" displayText="Tweet"></span>
                         <span class="st_googleplus" displayText="Google"></span>
                         <span class="st_email" displayText="Email"></span>
                     </p>
-                    <br/><br/>
-                    
+                    <br/>                    
                 </div>
             </div>
             <?php if ($bill->getBillText() == false): ?>
                 <h4 class="text-danger text-center">The text for this bill is not yet available.</h4>
             <?php else: ?>
                 <div class="clearfix"></div>
-                <div class="panel panel-default" style="height: 500px; overflow: hidden; border-width: 4px;">
+                <div class="panel panel-default" style="height: 540px; overflow: hidden; border-width: 4px;">
                     <div class="panel-heading">
                         <strong class="pull-left">The current draft of the bill as of <i class="fa fa-calendar"></i> <?= date('l jS F, Y'); ?></strong>
                         <div class="pull-right">
@@ -78,10 +87,7 @@
             <h2>Comments</h2>
            <div id="disqus_thread"></div>
             <script type="text/javascript">
-                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-                var disqus_shortname = 'parliament-hack-2013'; // required: replace example with your forum shortname
-        
-                /* * * DON'T EDIT BELOW THIS LINE * * */
+                var disqus_shortname = 'parliament-hack-2013';
                 (function() {
                     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
                     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
@@ -94,15 +100,9 @@
         </div>
         <div class="col-md-3">
             <p>
-                <strong><?= $bill->getBillType() ?></strong>
-            </p>
-            <p>
                 Sponsored by
             </p>
-            <?php 
-                foreach ($bill->getMembers() as $memberName):
-                $member = Member::getMemberByName($memberName);
-            ?>
+            <?php foreach ($bill->getMembers() as $member): ?>
                 <h4>
                     <?php if ($member->avatar): ?>
                     <img class="avatar" height="42px" src="<?= $member->avatar ?>" />
@@ -153,6 +153,12 @@
                     ?>
                 </div>
             </div>
+            <h3>Debates &amp; events</h3>
+            <?php if (count($bill->getEvents()) == 0): ?>
+                <p>
+                    <span class="text-muted">No events related to this bill scheduled.</span>
+                </p>
+            <?php endif; ?>
             <?php foreach ($bill->getEvents() as $event): ?>
                 <p> 
                     <i class="fa fa-calendar"></i> <?= date('l jS F, Y', strtotime($event->date)); ?><br/>
@@ -163,10 +169,12 @@
     </div><!-- /.container -->
     <script>
         $(function() {
+            /*
             Pizza.init(document.body, {
                 "show_percent": false,
                 "donut": true
             });
+            */
         });
     </script>
 <?php include('include/footer.php'); ?>
