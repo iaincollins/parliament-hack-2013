@@ -174,6 +174,10 @@ class Bill {
                 
             $event = new Event();
             $event->name = $result->title;
+            
+            if ($event->name == "to consider the Bill")
+                $event->name = "To consider the ".$this->title." Bill";
+
             $event->date = $result->event_date; 
             $event->url = $result->link_external;
             $events[strtotime($result->event_date)] = $event;

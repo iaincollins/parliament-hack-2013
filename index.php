@@ -1,6 +1,7 @@
 <?php
     include('include/header.php');
-    $members = array();
+    $allMembers = array();
+    $allEvents = array();
 ?>
     <div class="container">
         <div class="row">
@@ -41,9 +42,16 @@
                 <?php
                     $j = 0;
                     foreach (Bills::getAllBillsBeforeParliament() as $bill):
-                        $j++;
-                        if ($j > 20)
+                    
+                        foreach ($bill->getEvents() as $event) {
+                            $event->url = '/view-bill/'.$bill->id;
+                            array_push($allEvents, $event);
                             break;
+                        }
+
+                        //$j++;
+                        //if ($j > 20)
+                        //    break;
                             
                         // Ignore early bills with no details yet (or somehow broken because of the crummy parsing)
                         if (count($bill->getMembers()) == 0)
@@ -73,13 +81,14 @@
                     <div class="media-body">
                         <h3 style="margin-top: 0;"><a href="/view-bill/<?= $bill->id ?>" style="text-decoration: none;"><?= htmlspecialchars($bill->title) ?> Bill</a></h3>
                         <?php  
-                            foreach ($bill->getMembers() as $member):                                
-                                if (!isset($members[sha1($member->name)])) {
-                                    $members[sha1($member->name)] = array();
-                                    $members[sha1($member->name)]['member'] = $member;
-                                    $members[sha1($member->name)]['bills'] = 1;
+                            foreach ($bill->getMembers() as $member):
+
+                                if (!isset($allMembers[sha1($member->name)])) {
+                                    $allMembers[sha1($member->name)] = array();
+                                    $allMembers[sha1($member->name)]['member'] = $member;
+                                    $allMembers[sha1($member->name)]['bills'] = 1;
                                 } else {
-                                    $members[sha1($member->name)]['bills']++;
+                                    $allMembers[sha1($member->name)]['bills']++;
                                 }
                         ?>
                                 <?php if ($member->avatar): ?>
@@ -102,13 +111,46 @@
                 <?php endforeach; ?>
             </div>
             <div class="col-md-3">
-                <h3>MPs with active bills</h3>
+            
+                <h3>Debates &amp; events</h3>
+                <?php if (count($allEvents) == 0): ?>
+                    <p>
+                        <span class="text-muted">No events related to bills scheduled.</span>
+                    </p>
+                <?php endif; ?>
+                <?php 
+                    $sortedEvents = array();
+                    foreach ($allEvents as $event) {
+                        $timestamp = strtotime($event->date);
+                        
+                        // Ignore past events
+                        if ($timestamp < time())
+                            continue;
+                                                    
+                        if (!array_key_exists($timestamp, $sortedEvents))
+                            $sortedEvents[$timestamp] = array();
+                        
+                        array_push($sortedEvents[$timestamp], $event);
+                    }
+                ?>                
+                <?php foreach ($sortedEvents as $day => $events): ?>
+                    <p>
+                        <i class="fa fa-calendar"></i> <?= date('l jS F, Y', $day); ?><br/>
+                    </p>
+                    <?php foreach ($events as $event): ?>
+                        <p> 
+                            <a href="<?= htmlspecialchars($event->url) ?>"><?= $event->name ?></a>
+                        </p>
+                    <?php endforeach; ?>
+                <?php endforeach; ?>
+            
+                <h3>Members with bills</h3>
                 <hr/>
-            <?php  
-                foreach ($members as $array):
-                $member = $array['member'];
-                $numberOfBills = $array['bills'];
-            ?>
+                <?php  
+                    foreach ($allMembers as $array):
+                    $member = $array['member'];
+                    $numberOfBills = $array['bills'];
+                ?>
                 <p>
                     <?php if ($member->avatar): ?>
                     <img class="avatar" height="48px" src="<?= $member->avatar ?>" />
@@ -116,7 +158,7 @@
                     <a style="margin-right: 10px;" href="<?= $member->url ?>"><?= htmlspecialchars($member->name) ?></a>
                     <span class="badge"><?= $numberOfBills ?></span>
                 </p>
-            <?php endforeach; ?>
+                <?php endforeach; ?>
             </div>
         </div>
     </div><!-- /.container -->

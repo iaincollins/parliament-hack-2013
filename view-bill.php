@@ -37,7 +37,9 @@
                             $description = preg_replace("/to make provision/i", "", $description);                            
                             $description = ucfirst(trim($description));
                             foreach (explode(";", $description) as $line) {
-                                echo htmlspecialchars($line).'.';
+                                $line = preg_replace("/\.$/i", "", $line);                            
+                                $line .= '.';
+                                echo htmlspecialchars($line);
                                 break;
                             }
                         ?>
@@ -46,12 +48,17 @@
                         <?php
                             $i = 0;
                             foreach (explode(";", $description) as $line) {
-                                $line = ucfirst(trim($line));
-                                $line = preg_replace("/\.$/i", "", $line);                            
-                                $line .= '.';
                                 $i++;
                                 if ($i == 1)
                                     continue;                                    
+
+                                $line = ucfirst(trim($line));
+                                $line = preg_replace("/\.$/i", "", $line);                            
+                                $line .= '.';
+                                
+                                if ($line = "And for connected purposes.")
+                                    continue;
+                                
                                 echo '<li><i class="fa fa-chevron-right"></i> '.htmlspecialchars($line).'</li>';
                             }
                         ?>
@@ -67,7 +74,12 @@
                 </div>
             </div>
             <?php if ($bill->getBillText() == false): ?>
-                <h4 class="text-danger text-center">The text for this bill is not yet available.</h4>
+                <div class="alert alert-warning">
+                    <p>
+                        <i class="fa fa-warning"></i>
+                        <?= $bill->members[0]->name ?> (<?= $bill->members[0]->party ?>) has not yet submitted any text for this bill. Contact them for details.
+                    <p>
+                </div>
             <?php else: ?>
                 <div class="clearfix"></div>
                 <div class="panel panel-default" style="height: 540px; overflow: hidden; border-width: 4px;">
