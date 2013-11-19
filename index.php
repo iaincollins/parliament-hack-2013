@@ -112,7 +112,7 @@
             </div>
             <div class="col-md-3">
             
-                <h3>Debates &amp; events</h3>
+                <h3>Upcoming events</h3>
                 <?php if (count($allEvents) == 0): ?>
                     <p>
                         <span class="text-muted">No events related to bills scheduled.</span>
@@ -132,6 +132,7 @@
                         
                         array_push($sortedEvents[$timestamp], $event);
                     }
+                    ksort($sortedEvents);
                 ?>                
                 <?php foreach ($sortedEvents as $day => $events): ?>
                     <p>
